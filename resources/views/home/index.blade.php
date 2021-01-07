@@ -1,13 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>İlk Laravel Sayfası</title>
-</head>
-<body>
+<!-- resources/views/child.blade.php -->
 
-<h1>Laravel'e hoşgeldiniz </h1>
-<p>This is a paragraph.</p>
-<br>
-<a href="{{route('test', ['id' => 12,  'name' => 'Ali'])}}">Test Sayfası</a>
-</body>
-</html>
+@extends('layouts.home')
+
+@section('title', 'Sub Page Title')
+
+@section('sidebar')
+    @parent
+
+    <p>Sub page data </p>
+@endsection
+
+@section('content')
+    <p>This is my body content.</p>
+    aaaaaaaa<br>
+    bbbbbbbbbbbb<br>
+@endsection

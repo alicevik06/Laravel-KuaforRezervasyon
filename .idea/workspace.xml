@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="451e09d7-52bb-46fb-add4-48465cb679a6" name="Default Changelist" comment="" />
+    <list default="true" id="451e09d7-52bb-46fb-add4-48465cb679a6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +13,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -141,6 +147,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/home" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -163,7 +170,9 @@
       <option name="presentableId" value="Default" />
       <updated>1607267389997</updated>
       <workItem from="1607267391074" duration="5908000" />
-      <workItem from="1607278674129" duration="607000" />
+      <workItem from="1607278674129" duration="1201000" />
+      <workItem from="1607282978450" duration="403000" />
+      <workItem from="1610044526373" duration="2033000" />
     </task>
     <servers />
   </component>
@@ -171,9 +180,17 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1754" y="623" key="NewPhpFileDialog" timestamp="1607274376832">
+    <state x="1754" y="623" key="NewPhpFileDialog" timestamp="1610045020706">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1754" y="623" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1607274376832" />
+    <state x="1754" y="623" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1610045020706" />
+    <state x="1421" y="345" key="SettingsEditor" timestamp="1607283137387">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1421" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1607283137387" />
+    <state x="1583" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1610046774921">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1583" y="319" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1610046774921" />
   </component>
 </project>
