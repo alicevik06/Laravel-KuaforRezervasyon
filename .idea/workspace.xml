@@ -19,8 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="451e09d7-52bb-46fb-add4-48465cb679a6" name="Default Changelist" comment="Template Değişiklikler ve ayar işlemleri">
+    <list default="true" id="451e09d7-52bb-46fb-add4-48465cb679a6" name="Default Changelist" comment="Template Değişiklikler ve ayar işlemleri2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,6 +156,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1lHwajWyjhSmsaUgpGdXurYLxy1" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -189,7 +193,7 @@
       <workItem from="1607267391074" duration="5908000" />
       <workItem from="1607278674129" duration="1201000" />
       <workItem from="1607282978450" duration="403000" />
-      <workItem from="1610044526373" duration="16836000" />
+      <workItem from="1610044526373" duration="25038000" />
     </task>
     <task id="LOCAL-00001" summary="Masterpage ve extend işlemleri">
       <created>1610047241606</created>
@@ -212,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610137930484</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Template Değişiklikler ve ayar işlemleri2">
+      <created>1610139118877</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1610139118877</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,21 +244,22 @@
     <MESSAGE value="Masterpage ve extend işlemleri" />
     <MESSAGE value="Bootstrap yapı oluşturma ve Layout Extendation" />
     <MESSAGE value="Template Değişiklikler ve ayar işlemleri" />
-    <option name="LAST_COMMIT_MESSAGE" value="Template Değişiklikler ve ayar işlemleri" />
+    <MESSAGE value="Template Değişiklikler ve ayar işlemleri2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Template Değişiklikler ve ayar işlemleri2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1754" y="623" key="NewPhpFileDialog" timestamp="1610134164616">
+    <state x="1754" y="623" key="NewPhpFileDialog" timestamp="1610228372969">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1754" y="623" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1610134164616" />
+    <state x="1754" y="623" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1610228372969" />
     <state x="1421" y="345" key="SettingsEditor" timestamp="1607283137387">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1421" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1607283137387" />
-    <state x="1512" y="433" key="Vcs.Push.Dialog.v2" timestamp="1610137973563">
+    <state x="1512" y="433" key="Vcs.Push.Dialog.v2" timestamp="1610139226145">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1512" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1610137973563" />
+    <state x="1512" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1610139226145" />
     <state x="1583" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1610046774921">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
