@@ -23,7 +23,8 @@
                                     </div>
                                     <div class="mess__item">
                                         <div class="image img-cir img-40">
-                                            <img src="{{ asset('assets') }}/admin/images/icon/avatar-06.jpg" alt="Michelle Moreno"/>
+                                            <img src="{{ asset('assets') }}/admin/images/icon/avatar-06.jpg"
+                                                 alt="Michelle Moreno"/>
                                         </div>
                                         <div class="content">
                                             <h6>Michelle Moreno</h6>
@@ -33,7 +34,8 @@
                                     </div>
                                     <div class="mess__item">
                                         <div class="image img-cir img-40">
-                                            <img src="{{ asset('assets') }}/admin/images/icon/avatar-04.jpg" alt="Diane Myers"/>
+                                            <img src="{{ asset('assets') }}/admin/images/icon/avatar-04.jpg"
+                                                 alt="Diane Myers"/>
                                         </div>
                                         <div class="content">
                                             <h6>Diane Myers</h6>
@@ -55,7 +57,8 @@
                                     </div>
                                     <div class="email__item">
                                         <div class="image img-cir img-40">
-                                            <img src="{{ asset('assets') }}/admin/images/icon/avatar-06.jpg" alt="Cynthia Harvey"/>
+                                            <img src="{{ asset('assets') }}/admin/images/icon/avatar-06.jpg"
+                                                 alt="Cynthia Harvey"/>
                                         </div>
                                         <div class="content">
                                             <p>Meeting about new dashboard...</p>
@@ -64,7 +67,8 @@
                                     </div>
                                     <div class="email__item">
                                         <div class="image img-cir img-40">
-                                            <img src="{{ asset('assets') }}/admin/images/icon/avatar-05.jpg" alt="Cynthia Harvey"/>
+                                            <img src="{{ asset('assets') }}/admin/images/icon/avatar-05.jpg"
+                                                 alt="Cynthia Harvey"/>
                                         </div>
                                         <div class="content">
                                             <p>Meeting about new dashboard...</p>
@@ -73,7 +77,8 @@
                                     </div>
                                     <div class="email__item">
                                         <div class="image img-cir img-40">
-                                            <img src="{{ asset('assets') }}/admin/images/icon/avatar-04.jpg" alt="Cynthia Harvey"/>
+                                            <img src="{{ asset('assets') }}/admin/images/icon/avatar-04.jpg"
+                                                 alt="Cynthia Harvey"/>
                                         </div>
                                         <div class="content">
                                             <p>Meeting about new dashboard...</p>
@@ -131,20 +136,25 @@
                                     <img src="{{ asset('assets') }}/admin/images/icon/avatar-01.jpg" alt="John Doe"/>
                                 </div>
                                 <div class="content">
-                                    <a class="js-acc-btn" href="#">john doe</a>
+                                    @auth
+                                        <a class="js-acc-btn" href="#">{{ Auth::user()->name }}</a>
+                                    @endauth
                                 </div>
                                 <div class="account-dropdown js-dropdown">
                                     <div class="info clearfix">
                                         <div class="image">
                                             <a href="#">
-                                                <img src="{{ asset('assets') }}/admin/images/icon/avatar-01.jpg" alt="John Doe"/>
+                                                <img src="{{ asset('assets') }}/admin/images/icon/avatar-01.jpg"
+                                                     alt="John Doe"/>
                                             </a>
                                         </div>
                                         <div class="content">
-                                            <h5 class="name">
-                                                <a href="#">john doe</a>
-                                            </h5>
-                                            <span class="email">johndoe@example.com</span>
+                                            @auth
+                                                <h5 class="name">
+                                                    <a href="#">{{ Auth::user()->name }}</a>
+                                                </h5>
+                                                <span class="email">{{ Auth::user()->email }}</span>
+                                            @endauth
                                         </div>
                                     </div>
                                     <div class="account-dropdown__body">
@@ -161,10 +171,12 @@
                                                 <i class="zmdi zmdi-money-box"></i>Billing</a>
                                         </div>
                                     </div>
+                                    @auth
                                     <div class="account-dropdown__footer">
-                                        <a href="#">
+                                        <a href="{{ route ('admin_logout') }}">
                                             <i class="zmdi zmdi-power"></i>Logout</a>
                                     </div>
+                                    @endauth
                                 </div>
                             </div>
                         </div>
