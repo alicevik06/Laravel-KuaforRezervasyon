@@ -30,8 +30,11 @@
                         <div class="card">
 
                             <div class="card-header">
-                                <strong>Menü(Kategori) List</strong>
-
+                                <div class="row">
+                                <div class="col-2"> <strong>Menu List</strong></div>
+                                <div class="col-8"></div>
+                                <div class="col-2"> <a href="{{route('admin_category_add')}}" type="submit" class="btn btn-primary btn-sm">Menü Ekle</a></div>
+                                </div>
                             </div>
 
                             <div class="card-body">
@@ -59,7 +62,13 @@
                                                     <td>{{ $rs->title }}</td>
                                                     <td>{{ $rs->status }}</td>
                                                     <td>Edit</td>
-                                                    <td>Delete</td>
+                                                    <td>
+                                                        <button type="reset" class="btn btn-danger btn-sm">
+                                                            <a style="color: white" href="{{route('admin_category_delete',['id' => $rs->id])}}" onclick="return confirm('Silmek İstedğinize Emin misiniz?')">
+                                                                Delete
+                                                            </a>
+                                                        </button>
+                                                    </td>
                                                 </tr>
                                                 @endforeach
                                                 </tbody>

@@ -11,7 +11,7 @@
             <div class="row mb-2">
 
                 <div class="col-sm-6">
-                    <h3>Menüler(Kategoriler)</h3>
+                    <h3>Boş Sayfa</h3>
                 </div>
 
                 <div class="col-sm-6">
