@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Menü Ekleme')
+@section('title', 'Menü Düzenleme')
 
 @section('content')
 
@@ -11,7 +11,7 @@
             <div class="row mb-2">
 
                 <div class="col-sm-6">
-                    <h3>Add Menu</h3>
+                    <h3>Menu Düzenle</h3>
                 </div>
 
                 <div class="col-sm-6">
@@ -30,7 +30,7 @@
                         <div class="card">
 
                             <div style="background-color:royalblue " class="card-header">
-                                <strong><label style="color: white">Menü Ekleme Formu</label></strong>
+                                <strong><label style="color: white">Menü Düzenleme Formu</label></strong>
 
                             </div>
 
@@ -39,7 +39,7 @@
                                 <div class="card">
 
                                     <div class="card-body card-block">
-                                        <form action=" {{route('admin_category_create')}} " method="post"
+                                        <form action=" {{route('admin_category_update',['id' => $data->id] )}} " method="post"
                                               class="form-horizontal">
                                             @csrf
                                             <div class="row form-group">
@@ -48,9 +48,9 @@
                                                 </div>
                                                 <div class="col-12 col-md-9">
                                                     <select name="parent_id" class="form-control-sm form-control">
-                                                        <option value="0" selected="selected">Ana Kategori</option>
+                                                        <option value="0">Ana Kategori</option>
                                                         @foreach( $datalist as $rs )
-                                                            <option value="{{ $rs->id }}">{{ $rs->title }}</option>
+                                                            <option value="{{ $rs->id }}" @if ($rs->id == $data->parent_id) selected="selected" @endif >{{ $rs->title }}</option>
                                                         @endforeach
                                                     </select>
                                                 </div>
@@ -60,7 +60,7 @@
                                                     <label><b>Title</b></label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                                    <input type="text" name="title" class="form-control">
+                                                    <input type="text" name="title" value="{{$data->title}}" class="form-control">
 
                                                 </div>
                                             </div>
@@ -69,7 +69,7 @@
                                                     <label><b>Keywords</b></label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                                    <input type="text" name="keywords" class="form-control">
+                                                    <input type="text" name="keywords" value="{{$data->keywords}}" class="form-control">
 
                                                 </div>
                                             </div>
@@ -78,7 +78,7 @@
                                                     <label><b>Description</b></label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                                    <input type="text" name="description" class="form-control">
+                                                    <input type="text" name="description" value="{{$data->description}}" class="form-control">
 
                                                 </div>
                                             </div>
@@ -87,7 +87,7 @@
                                                     <label><b>Slug</b></label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                                    <input type="text" name="slug" class="form-control">
+                                                    <input type="text" name="slug" value="{{$data->slug}}" class="form-control">
 
                                                 </div>
                                             </div>
@@ -96,9 +96,9 @@
                                                     <label class=" form-control-label"><b>Status</b></label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                                    <select name="status" id="SelectLm"
-                                                            class="form-control-sm form-control">
-                                                        <option selected="selected">False</option>
+                                                    <select name="status" id="SelectLm" class="form-control-sm form-control">
+                                                        <option selected="selected">{{$data->status}}</option>
+                                                        <option>False</option>
                                                         <option>True</option>
                                                     </select>
                                                 </div>
@@ -108,11 +108,9 @@
                                     </div>
                                     <div class="card-footer">
                                         <button type="submit" class="btn btn-primary btn-sm">
-                                            <i class="fa fa-dot-circle-o"></i> Add Menu
+                                            <i class="fa fa-dot-circle-o"></i> Update Menu
                                         </button>
-                                        <button type="reset" class="btn btn-danger btn-sm">
-                                            <i class="fa fa-ban"></i> Reset
-                                        </button>
+
                                     </div>
                                     </form>
                                 </div>

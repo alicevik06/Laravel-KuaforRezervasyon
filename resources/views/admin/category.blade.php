@@ -43,7 +43,7 @@
                                     <div class="col-md-12">
                                         <!-- DATA TABLE-->
                                         <div class="table-responsive m-b-40">
-                                            <table class="table table-borderless table-data3">
+                                            <table class="table table-borderless table-striped table-earning">
                                                 <thead>
                                                 <tr>
                                                     <th>Id</th>
@@ -61,9 +61,14 @@
                                                     <td>{{ $rs->parent_id }}</td>
                                                     <td>{{ $rs->title }}</td>
                                                     <td>{{ $rs->status }}</td>
-                                                    <td>Edit</td>
                                                     <td>
-                                                        <button type="reset" class="btn btn-danger btn-sm">
+                                                        <button type="reset" class="btn btn-info">
+                                                            <a style="color: white" href="{{route('admin_category_edit',['id' => $rs->id])}}" >
+                                                                Edit
+                                                            </a>
+                                                        </button></td>
+                                                    <td>
+                                                        <button type="reset" class="btn btn-danger">
                                                             <a style="color: white" href="{{route('admin_category_delete',['id' => $rs->id])}}" onclick="return confirm('Silmek İstedğinize Emin misiniz?')">
                                                                 Delete
                                                             </a>
