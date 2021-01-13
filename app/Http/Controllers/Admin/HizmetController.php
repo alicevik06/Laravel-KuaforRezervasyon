@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\Hizmet;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class HizmetController extends Controller
 {
@@ -53,10 +54,10 @@ class HizmetController extends Controller
         $data->description = $request->input('description');
         $data->slug = $request->input('slug');
         $data->status = $request->input('status');
-      //  $data->image= $request->input('image');
         $data->category_id= $request->input('category_id');
         $data->price= $request->input('price');
         $data->detail= $request->input('detail');
+        $data->image= Storage::putFile('images',$request->file('image'));//File Upload
         $data->save();
         return redirect()->route('admin_hizmetler');
 
@@ -102,10 +103,10 @@ class HizmetController extends Controller
         $data->description = $request->input('description');
         $data->slug = $request->input('slug');
         $data->status = $request->input('status');
-        //  $data->image= $request->input('image');
         $data->category_id= $request->input('category_id');
         $data->price= $request->input('price');
         $data->detail= $request->input('detail');
+        $data->image= Storage::putFile('images',$request->file('image'));//File Update
         $data->save();
         return redirect()->route('admin_hizmetler');
     }

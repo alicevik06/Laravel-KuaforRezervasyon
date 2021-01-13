@@ -42,8 +42,7 @@
                                 <div class="card">
 
                                     <div class="card-body card-block">
-                                        <form action=" {{route('admin_hizmet_store')}} " method="post"
-                                              class="form-horizontal">
+                                        <form action=" {{route('admin_hizmet_store')}} " method="post" class="form-horizontal" enctype="multipart/form-data">
                                             @csrf
                                             <div class="row form-group">
                                                 <div class="col col-md-3">
@@ -82,6 +81,15 @@
                                                 </div>
                                                 <div class="col-12 col-md-9">
                                                     <input type="text" name="description" class="form-control">
+
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label><b>Image</b></label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    <input type="file" name="image" class="form-control">
 
                                                 </div>
                                             </div>

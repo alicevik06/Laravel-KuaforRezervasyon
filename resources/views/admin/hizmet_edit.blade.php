@@ -40,7 +40,7 @@
 
                                     <div class="card-body card-block">
                                         <form action=" {{route('admin_hizmet_update',['id' => $data->id])}} " method="post"
-                                              class="form-horizontal">
+                                              class="form-horizontal" enctype="multipart/form-data">
                                             @csrf
                                             <div class="row form-group">
                                                 <div class="col col-md-3">
@@ -81,6 +81,18 @@
                                                     <input type="text" name="description"  value="{{$data->description}}"class="form-control">
 
                                                 </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label><b>Image</b></label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    <input type="file" name="image" value="{{$data->image}}" class="form-control">
+                                                    @if ($data->image)
+                                                        <img src="{{Storage::url($data->image)}}" height="60" alt="">
+                                                    @endif
+                                                </div>
+
                                             </div>
                                             <div class="row form-group">
                                                 <div class="col col-md-3">
