@@ -96,7 +96,12 @@
                                                     <label><b>detail</b></label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                                    <input type="text" name="detail" value="{{$data->detail}}" class="form-control">
+                                                    <textarea class="ckeditor" name="detail" >{{$data->detail}}</textarea>
+                                                    <script>
+                                                        $(document).ready(function() {
+                                                            $('#summernote').summernote();
+                                                        });
+                                                    </script>
 
                                                 </div>
                                             </div>

@@ -29,9 +29,10 @@
     <link href="{{ asset('assets') }}/admin/vendor/slick/slick.css" rel="stylesheet" media="all">
     <link href="{{ asset('assets') }}/admin/vendor/select2/select2.min.css" rel="stylesheet" media="all">
     <link href="{{ asset('assets') }}/admin/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
-
     <!-- Main CSS-->
     <link href="{{ asset('assets') }}/admin/css/theme.css" rel="stylesheet" media="all">
+
+    <script src="{{ asset('assets') }}/admin/ckeditor/ckeditor.js"></script>
     @yield('css')
     @yield('javascript')
 </head>

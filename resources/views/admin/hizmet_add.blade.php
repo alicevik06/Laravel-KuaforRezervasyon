@@ -1,7 +1,10 @@
 @extends('layouts.admin')
 
 @section('title', 'Hizmet Ekleme')
+@section('javascript')
 
+
+@endsection
 @section('content')
 
     <!-- MAIN CONTENT-->
@@ -96,7 +99,12 @@
                                                     <label><b>detail</b></label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                                    <input type="text" name="detail" class="form-control">
+                                                    <textarea class="ckeditor" name="detail"></textarea>
+                                                    <script>
+                                                        $(document).ready(function() {
+                                                            $('#summernote').summernote();
+                                                        });
+                                                    </script>
 
                                                 </div>
                                             </div>
