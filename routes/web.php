@@ -43,6 +43,19 @@ Route::middleware('auth')->prefix('admin')->group(function (){
     Route::get('category/delete/{id}', [App\Http\Controllers\Admin\CategoryController::class, 'destroy'])->name('admin_category_delete');
     Route::get('category/show', [App\Http\Controllers\Admin\CategoryController::class, 'show'])->name('admin_category_show');
 
+    #Hizmet
+    Route::prefix('hizmet')->group(function (){
+
+        Route::get('/', [App\Http\Controllers\Admin\HizmetController::class, 'index'])->name('admin_hizmetler');
+        Route::get('create', [App\Http\Controllers\Admin\HizmetController::class, 'create'])->name('admin_hizmet_add');
+        Route::post('store', [App\Http\Controllers\Admin\HizmetController::class, 'store'])->name('admin_hizmet_store');
+        Route::get('edit/{id}', [App\Http\Controllers\Admin\HizmetController::class, 'edit'])->name('admin_hizmet_edit');
+        Route::post('update/{id}', [App\Http\Controllers\Admin\HizmetController::class, 'update'])->name('admin_hizmet_update');
+        Route::get('delete/{id}', [App\Http\Controllers\Admin\HizmetController::class, 'destroy'])->name('admin_hizmet_delete');
+        Route::get('show', [App\Http\Controllers\Admin\HizmetController::class, 'show'])->name('admin_hizmet_show');
+    });
+
+
 });
     Route::get('/admin/login', [HomeController::class, 'login'])->name('admin_login');
     Route::post('/admin/logincheck', [HomeController::class, 'logincheck'])->name('admin_logincheck');

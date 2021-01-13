@@ -16,6 +16,11 @@
                         <i class="fas fa-tachometer-alt"></i>Menüler(Kategori)</a>
 
                 </li>
+                <li class="active has-sub">
+                    <a href=" {{route ('admin_hizmetler')}}" class="js-arrow">
+                        <i class="fas fa-tachometer-alt"></i>Hizmetler</a>
+
+                </li>
                 <li>
                     <a href="chart.html">
                         <i class="fas fa-chart-bar"></i>Store Ürünler</a>
