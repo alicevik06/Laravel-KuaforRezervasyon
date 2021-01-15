@@ -55,6 +55,15 @@ Route::middleware('auth')->prefix('admin')->group(function (){
         Route::get('show', [App\Http\Controllers\Admin\HizmetController::class, 'show'])->name('admin_hizmet_show');
     });
 
+    #Hizmet Image Gallery
+    Route::prefix('image')->group(function (){
+
+        Route::get('create/{hizmet_id}', [App\Http\Controllers\Admin\ImageController::class, 'create'])->name('admin_image_add');
+        Route::post('store/{hizmet_id}', [App\Http\Controllers\Admin\ImageController::class, 'store'])->name('admin_image_store');
+        Route::get('delete/{id}/{hizmet_id}', [App\Http\Controllers\Admin\ImageController::class, 'destroy'])->name('admin_image_delete');
+        Route::get('show', [App\Http\Controllers\Admin\ImageController::class, 'show'])->name('admin_image_show');
+    });
+
 
 });
     Route::get('/admin/login', [HomeController::class, 'login'])->name('admin_login');

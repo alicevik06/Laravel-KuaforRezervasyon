@@ -32,18 +32,19 @@
                             <div class="card-header">
                                 <div class="row">
                                 <div class="col-2"> <strong>Hizmetler Listesi</strong></div>
-                                <div class="col-8"></div>
-                                <div class="col-2"> <a href="{{route('admin_hizmet_add')}}" type="submit" class="btn btn-primary btn-sm">Hizmet Ekle</a></div>
+
+                                    <div class="col-8"></div>
+
                                 </div>
                             </div>
 
                             <div class="card-body">
-
+                                <div class="col-2"> <a href="{{route('admin_hizmet_add')}}" type="submit" class="btn btn-primary btn-sm">Hizmet Ekle</a></div>
                                 <div class="row m-t-30">
                                     <div class="col-md-12">
                                         <!-- DATA TABLE-->
                                         <div class="table-responsive m-b-40">
-                                            <table class="table table-borderless table-striped table-earning">
+                                            <table style="width: 500px;border: 1px solid black;" class="table table-striped table-earning">
                                                 <thead>
                                                 <tr>
                                                     <th>Id</th>
@@ -51,6 +52,7 @@
                                                     <th>Title</th>
                                                     <th>Price</th>
                                                     <th>İmage</th>
+                                                    <th>İmage Gallery</th>
                                                     <th>Status</th>
                                                     <th class="text-center" colspan="2">Actions</th>
                                                 </tr>
@@ -64,8 +66,12 @@
                                                     <td>{{ $rs->price }}</td>
                                                     <td>
                                                         @if ($rs->image)
-                                                        <img src="{{ Storage::url($rs->image)}}" height="30" alt="">
+                                                        <img style="max-height: 100%;width: 64px; " src="{{ Storage::url($rs->image)}}"  alt="">
                                                         @endif
+                                                    </td>
+                                                    <td><a href="{{route('admin_image_add',['hizmet_id' => $rs->id])}}" onclick="return !window.open(this.href,'','top=50 left=100 width=1100,height=700')">
+                                                            <img style="height: 64px;width: 64px;" src="{{asset('assets/admin/images')}}/gallery.jpg">
+                                                        </a>
                                                     </td>
                                                     <td>{{ $rs->status }}</td>
                                                     <td>
