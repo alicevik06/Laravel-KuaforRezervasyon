@@ -87,7 +87,7 @@
                                                     <label><b>Image</b></label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                                    <input type="file" name="image" value="{{$data->image}}" class="form-control">
+                                                    <input type="file" name="image"  class="form-control">
                                                     @if ($data->image)
                                                         <img src="{{Storage::url($data->image)}}" height="60" alt="">
                                                     @endif
@@ -99,7 +99,7 @@
                                                     <label><b>price</b></label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                                    <input type="number" value="0" name="price" value="{{$data->price}}" class="form-control">
+                                                    <input type="number"  name="price" value="{{$data->price}}" class="form-control">
 
                                                 </div>
                                             </div>

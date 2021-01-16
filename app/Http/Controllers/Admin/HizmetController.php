@@ -106,7 +106,10 @@ class HizmetController extends Controller
         $data->category_id= $request->input('category_id');
         $data->price= $request->input('price');
         $data->detail= $request->input('detail');
-        $data->image= Storage::putFile('images',$request->file('image'));//File Update
+        if($request->file('image')!=null)
+        {
+            $data->image = Storage::putFile('images', $request->file('image'));//File Update
+        }
         $data->save();
         return redirect()->route('admin_hizmetler');
     }
