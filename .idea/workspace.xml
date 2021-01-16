@@ -19,10 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="451e09d7-52bb-46fb-add4-48465cb679a6" name="Default Changelist" comment="Hizmetler ekleme ve düzenleme Image yükleme">
+    <list default="true" id="451e09d7-52bb-46fb-add4-48465cb679a6" name="Default Changelist" comment="Hizmetler fotoğraf galerisi oluşturulması">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/7dffa9fa-78e6-4e7b-a93f-2f31906427c3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7dffa9fa-78e6-4e7b-a93f-2f31906427c3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/hizmet.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/hizmet.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -199,7 +199,7 @@
       <workItem from="1607282978450" duration="403000" />
       <workItem from="1610044526373" duration="80106000" />
       <workItem from="1610625929225" duration="585000" />
-      <workItem from="1610710219584" duration="14458000" />
+      <workItem from="1610710219584" duration="31129000" />
     </task>
     <task id="LOCAL-00001" summary="Masterpage ve extend işlemleri">
       <created>1610047241606</created>
@@ -285,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610557067650</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Hizmetler fotoğraf galerisi oluşturulması">
+      <created>1610731727986</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1610731727986</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,17 +323,18 @@
     <MESSAGE value="Hizmetler yapısı Ekleme, Listeleme, Düzenleme, Silme" />
     <MESSAGE value="Hizmetler Detail Zengin Metin Editörü eklenmesi" />
     <MESSAGE value="Hizmetler ekleme ve düzenleme Image yükleme" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hizmetler ekleme ve düzenleme Image yükleme" />
+    <MESSAGE value="Hizmetler fotoğraf galerisi oluşturulması" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hizmetler fotoğraf galerisi oluşturulması" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1558" y="362" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610317013145">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1558" y="362" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1610317013145" />
-    <state x="1700" y="458" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610713399037">
+    <state x="1700" y="458" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610751950785">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1700" y="458" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1610713399037" />
+    <state x="1700" y="458" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1610751950785" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1610317132616">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -339,10 +347,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1421" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1607283137387" />
-    <state x="1512" y="433" key="Vcs.Push.Dialog.v2" timestamp="1610557079124">
+    <state x="1512" y="433" key="Vcs.Push.Dialog.v2" timestamp="1610731736637">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1512" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1610557079124" />
+    <state x="1512" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1610731736637" />
     <state x="1583" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1610046774921">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

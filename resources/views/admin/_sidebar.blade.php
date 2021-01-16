@@ -46,7 +46,13 @@
                         </li>
                     </ul>
                 </li>
+                <li>
+                    <a href="{{route('admin_setting')}}">
 
+                        <img style="height: 26px;width: 26px;" src="{{asset('assets/admin/images')}}/setting-icon.png">Setting</a>
+
+                    </a>
+                </li>
             </ul>
         </nav>
     </div>
