@@ -31,9 +31,9 @@ class HizmetController extends Controller
      */
     public function create()
     {
-        $datalist = Hizmet::all();
-        $data = Category::get()->where('parent_id','>', 0);
-        return view('admin.hizmet_add', ['data' => $data, 'datalist' => $datalist]);
+        $datalist = Category::with('children')->get();
+        //$data = Category::get()->where('parent_id','>', 0);
+        return view('admin.hizmet_add', ['datalist' => $datalist]);
 
 
 
@@ -84,7 +84,7 @@ class HizmetController extends Controller
     public function edit(Hizmet $hizmet,$id)
     {
         $data = Hizmet::find($id);
-        $datalist = Category::all();
+        $datalist = Category::with('children')->get();
         return view('admin.hizmet_edit', ['data' => $data, 'datalist' => $datalist]);
     }
 

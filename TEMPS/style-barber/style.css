@@ -1744,7 +1744,7 @@ ul.dropdown-menu > li > a {
 
 ul.dropdown-menu ul {
 	
-	width:158px;
+	width:168px;
 	position:absolute;
 	top:50px;
 	left:0;
@@ -1757,8 +1757,21 @@ ul.dropdown-menu ul li a {
 	font-size:16px;
 	
 }
-ul.dropdown-menu >li:hover ul {
-	display:inline;
+
+
+ul.dropdown-menu  li:hover >  ul{
+    display: block;
+    }
+
+ul.dropdown-menu li ul li ul{
+	width:148px;
+    height:auto;
+	float:left;
+	
+	position:absolute;
+    top:0;
+    left:168px;   
+    display:none;
 }
 
 

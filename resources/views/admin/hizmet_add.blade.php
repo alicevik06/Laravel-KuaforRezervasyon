@@ -46,13 +46,15 @@
                                             @csrf
                                             <div class="row form-group">
                                                 <div class="col col-md-3">
-                                                    <label><b>Parent</b></label>
+                                                    <label><b>Menü</b></label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
                                                     <select name="category_id" class="form-control-sm form-control">
 
-                                                        @foreach( $data as $rs )
-                                                            <option value="{{ $rs->id }}">{{ $rs->title }}</option>
+                                                        @foreach( $datalist as $rs )
+                                                            <option value="{{ $rs->id }}">
+                                                                {{\App\Http\Controllers\Admin\CategoryController::getParentsTree($rs,$rs->title)}}
+                                                            </option>
                                                         @endforeach
                                                     </select>
                                                 </div>
