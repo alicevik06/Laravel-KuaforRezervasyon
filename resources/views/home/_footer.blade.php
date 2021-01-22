@@ -1,67 +1,24 @@
-<div style="height: 500px;" id="testimonials" class="parallax section db parallax-inner-bg">
+@php
+    $setting = \App\Http\Controllers\HomeController::getsetting();
+@endphp
+
+<div style="height: 400px;" id="testimonials" class="parallax section db parallax-inner-bg">
     <div class="container">
         <div class="section-title row text-center">
             <div class="col-md-8 offset-md-2">
-                <small>LET'S SEE OUR TESTIMONIALS</small>
-                <h3>HAPPY TESTIMONIALS</h3>
+
+                <h3>Kalite Tesadüf değildir..</h3>
             </div>
         </div><!-- end title -->
 
         <div class="row">
             <div class="col-md-12 col-sm-12">
-                <div class="testi-carousel owl-carousel owl-theme">
-                    <div class="testimonial clearfix">
-                        <div class="testi-meta">
-                            <i class="fa fa-quote-right"></i>
-                            <img src="{{ asset('assets') }}/uploads/testi_01.png" alt="" class="img-responsive alignright">
-                            <h4>James Fernando <small>- Manager of Racer</small></h4>
-                        </div>
-                        <div class="desc">
-                            <h3>Wonderful Support!</h3>
-                            <p class="lead">They have got my project on time with the competition with a sed highly skilled, and experienced & professional team.</p>
-                        </div>
-                        <!-- end testi-meta -->
-                    </div>
-                    <!-- end testimonial -->
-                    <div class="testimonial clearfix">
-                        <div class="testi-meta">
-                            <i class="fa fa-quote-right"></i>
-                            <img src="{{ asset('assets') }}/uploads/testi_02.png" alt="" class="img-responsive alignright">
-                            <h4>Jacques Philips <small>- Designer</small></h4>
-                        </div>
-                        <div class="desc">
-                            <h3>Awesome Services!</h3>
-                            <p class="lead">Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you completed.</p>
-                        </div>
-                        <!-- end testi-meta -->
-                    </div>
-                    <!-- end testimonial -->
-                    <div class="testimonial clearfix">
-                        <div class="testi-meta">
-                            <i class="fa fa-quote-right"></i>
-                            <img src="{{ asset('assets') }}/uploads/testi_03.png" alt="" class="img-responsive alignright">
-                            <h4>Venanda Mercy <small>- Newyork City</small></h4>
-                        </div>
-                        <div class="desc">
-                            <h3>Great & Talented Team!</h3>
-                            <p class="lead">The master-builder of human happines no one rejects, dislikes avoids pleasure itself, because it is very pursue pleasure. </p>
-                        </div>
-                        <!-- end testi-meta -->
-                    </div>
-                    <!-- end testimonial -->
-                    <div class="testimonial clearfix">
-                        <div class="testi-meta">
-                            <i class="fa fa-quote-right"></i>
-                            <img src="{{ asset('assets') }}/uploads/testi_03.png" alt="" class="img-responsive alignright">
-                            <h4>Venanda Mercy <small>- Newyork City</small></h4>
-                        </div>
-                        <div class="desc">
-                            <h3> Great & Talented Team!</h3>
-                            <p class="lead">The master-builder of human happines no one rejects, dislikes avoids pleasure itself, because it is very pursue pleasure. </p>
-                        </div>
-                        <!-- end testi-meta -->
-                    </div>
-                    <!-- end testimonial -->
+                <div class="text-center" >
+
+                    <p style="color: white;font-size: 14pt;"><strong>Company : </strong> {{$setting->company}} </p><br>
+                    <p style="color: white;font-size: 14pt;"><strong>Email : </strong> {{$setting->email}} </p>
+                    <p style="color: white;font-size: 14pt;"><strong>Phone : </strong> {{$setting->phone}} </p>
+                    <p style="color: white;font-size: 14pt;"><strong>Address : </strong> {{$setting->address}} </p><br>
                 </div><!-- end carousel -->
             </div><!-- end col -->
         </div><!-- end row -->
@@ -72,15 +29,16 @@
     <div class="container">
         <div class="footer-distributed">
             <div class="footer-left">
+                <strong>Sıkça Sorulan Sorular</strong><br>
+                <a href="{{route('sss')}}"><img src="{{ asset('assets') }}/uploads/sss-icon.png" ></a><br>
                 <p class="footer-links">
-                    <a href="#">Home</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Pricing</a>
-                    <a href="#">About</a>
-                    <a href="#">Faq</a>
-                    <a href="#">Contact</a>
+
+                        @if ($setting->instagram != null)<a href="{{$setting->instagram}}" target="_blank" ><img src="{{ asset('assets') }}/uploads/insta.png" ></a>@endif
+                        @if ($setting->facebook != null)<a href="{{$setting->facebook}}"target="_blank"><img src="{{ asset('assets') }}/uploads/face.png" ></a>@endif
+                        @if ($setting->twitter != null)<a href="{{$setting->twitter}}"target="_blank"><img src="{{ asset('assets') }}/uploads/twitter.png" ></a>@endif
+
                 </p>
-                <p class="footer-company-name">All Rights Reserved. &copy; 2021 <a href="#">Kuafor Reservation Site</a> Design By : <a href="https://html.design/">ALİ ÇEVİK</a></p>
+                <p class="footer-company-name">All Rights Reserved. &copy; 2021 {{$setting->company}}  | Design By : ALİ ÇEVİK</p>
             </div>
         </div>
     </div><!-- end container -->

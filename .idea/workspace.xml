@@ -19,22 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="451e09d7-52bb-46fb-add4-48465cb679a6" name="Default Changelist" comment="Hizmetler ve Menüler One to Many İlişkisi kurulması">
+    <list default="true" id="451e09d7-52bb-46fb-add4-48465cb679a6" name="Default Changelist" comment="Menü Alt ağaç ve iç içe ilişki fonksiyonu oluşturulması">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/style-barber/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/style-barber/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/style-barber/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/style-barber/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/HizmetController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/HizmetController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category_add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category_edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/hizmet.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/hizmet.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/hizmet_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/hizmet_add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/hizmet_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/hizmet_edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +204,9 @@
       <workItem from="1610625929225" duration="585000" />
       <workItem from="1610710219584" duration="34216000" />
       <workItem from="1610824526116" duration="484000" />
-      <workItem from="1610826279334" duration="12913000" />
+      <workItem from="1610826279334" duration="13168000" />
+      <workItem from="1610981462424" duration="264000" />
+      <workItem from="1611240253292" duration="21151000" />
     </task>
     <task id="LOCAL-00001" summary="Masterpage ve extend işlemleri">
       <created>1610047241606</created>
@@ -319,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610803175340</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Menü Alt ağaç ve iç içe ilişki fonksiyonu oluşturulması">
+      <created>1610843633352</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1610843633352</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,7 +354,8 @@
     <MESSAGE value="Hizmetler fotoğraf galerisi oluşturulması" />
     <MESSAGE value="Setting Site Ayarları" />
     <MESSAGE value="Hizmetler ve Menüler One to Many İlişkisi kurulması" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hizmetler ve Menüler One to Many İlişkisi kurulması" />
+    <MESSAGE value="Menü Alt ağaç ve iç içe ilişki fonksiyonu oluşturulması" />
+    <option name="LAST_COMMIT_MESSAGE" value="Menü Alt ağaç ve iç içe ilişki fonksiyonu oluşturulması" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1558" y="362" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610317013145">
@@ -376,10 +378,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1421" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1607283137387" />
-    <state x="1512" y="433" key="Vcs.Push.Dialog.v2" timestamp="1610803186411">
+    <state x="1512" y="433" key="Vcs.Push.Dialog.v2" timestamp="1610843650153">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1512" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1610803186411" />
+    <state x="1512" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1610843650153" />
     <state x="1583" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1610046774921">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

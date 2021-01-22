@@ -1,14 +1,18 @@
 <!-- resources/views/child.blade.php -->
+@php
+    $setting = \App\Http\Controllers\HomeController::getsetting();
+@endphp
 
 @extends('layouts.home')
 
-@section('title', 'Laravel Kuaför Rez. Sitesi')
+@section('title',$setting->title)
+
 
 @section('description')
-    Saç Kesiminiz Size Özel Olmalıdır.Aynı Parmak İziniz Gibi
+    {{ $setting->description }}
 @endsection
 
-@section('keywords', 'AC , Erkek , Kuaför , Saç , Kesim , Sakal')
+@section('keywords', $setting->keywords)
 
 @section('content')
     <!-- Page Content -->
