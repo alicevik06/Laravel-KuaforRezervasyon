@@ -19,13 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="451e09d7-52bb-46fb-add4-48465cb679a6" name="Default Changelist" comment="Menü Alt ağaç ve iç içe ilişki fonksiyonu oluşturulması">
+    <list default="true" id="451e09d7-52bb-46fb-add4-48465cb679a6" name="Default Changelist" comment="Sayfa meta settinglerin yapılması, sosyal medya bağlantılarının dinamik şekilde düzenlenmesi , login ve logout yönlendirmelerinin yapılması.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -172,13 +173,14 @@
     <property name="DatabaseDriversLRU" value="mariadb&#10;mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layouts" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\php\Ackuafor\resources\views\layouts" />
       <recent name="C:\php\Ackuafor\resources\views\admin" />
       <recent name="C:\php\Ackuafor\resources\views\home" />
     </key>
@@ -206,7 +208,7 @@
       <workItem from="1610824526116" duration="484000" />
       <workItem from="1610826279334" duration="13168000" />
       <workItem from="1610981462424" duration="264000" />
-      <workItem from="1611240253292" duration="21151000" />
+      <workItem from="1611240253292" duration="30103000" />
     </task>
     <task id="LOCAL-00001" summary="Masterpage ve extend işlemleri">
       <created>1610047241606</created>
@@ -320,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610843633352</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Sayfa meta settinglerin yapılması, sosyal medya bağlantılarının dinamik şekilde düzenlenmesi , login ve logout yönlendirmelerinin yapılması.">
+      <created>1611345713593</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1611345713593</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,7 +364,8 @@
     <MESSAGE value="Setting Site Ayarları" />
     <MESSAGE value="Hizmetler ve Menüler One to Many İlişkisi kurulması" />
     <MESSAGE value="Menü Alt ağaç ve iç içe ilişki fonksiyonu oluşturulması" />
-    <option name="LAST_COMMIT_MESSAGE" value="Menü Alt ağaç ve iç içe ilişki fonksiyonu oluşturulması" />
+    <MESSAGE value="Sayfa meta settinglerin yapılması, sosyal medya bağlantılarının dinamik şekilde düzenlenmesi , login ve logout yönlendirmelerinin yapılması." />
+    <option name="LAST_COMMIT_MESSAGE" value="Sayfa meta settinglerin yapılması, sosyal medya bağlantılarının dinamik şekilde düzenlenmesi , login ve logout yönlendirmelerinin yapılması." />
   </component>
   <component name="WindowStateProjectService">
     <state x="1558" y="362" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610317013145">
@@ -370,18 +380,18 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.2560.1400@0.0.2560.1400" timestamp="1610317132616" />
-    <state x="1754" y="623" key="NewPhpFileDialog" timestamp="1610836702254">
+    <state x="1754" y="623" key="NewPhpFileDialog" timestamp="1611357875807">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1754" y="623" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1610836702254" />
+    <state x="1754" y="623" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1611357875807" />
     <state x="1421" y="345" key="SettingsEditor" timestamp="1607283137387">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1421" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1607283137387" />
-    <state x="1512" y="433" key="Vcs.Push.Dialog.v2" timestamp="1610843650153">
+    <state x="1512" y="433" key="Vcs.Push.Dialog.v2" timestamp="1611345728875">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1512" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1610843650153" />
+    <state x="1512" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1611345728875" />
     <state x="1583" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1610046774921">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

@@ -2,7 +2,7 @@
     $setting = \App\Http\Controllers\HomeController::getsetting();
 @endphp
 
-<div style="height: 400px;" id="testimonials" class="parallax section db parallax-inner-bg">
+<div style="height: 300px;" id="testimonials" class="parallax section db parallax-inner-bg">
     <div class="container">
         <div class="section-title row text-center">
             <div class="col-md-8 offset-md-2">
@@ -15,10 +15,10 @@
             <div class="col-md-12 col-sm-12">
                 <div class="text-center" >
 
-                    <p style="color: white;font-size: 14pt;"><strong>Company : </strong> {{$setting->company}} </p><br>
-                    <p style="color: white;font-size: 14pt;"><strong>Email : </strong> {{$setting->email}} </p>
-                    <p style="color: white;font-size: 14pt;"><strong>Phone : </strong> {{$setting->phone}} </p>
-                    <p style="color: white;font-size: 14pt;"><strong>Address : </strong> {{$setting->address}} </p><br>
+                    <label style="color: white;font-size: 14pt;"><strong>Company : </strong> {{$setting->company}} </label><br>
+                    <label style="color: white;font-size: 14pt;"><strong>Email : </strong> {{$setting->email}} </label><br>
+                    <label style="color: white;font-size: 14pt;"><strong>Phone : </strong> {{$setting->phone}}      </label>
+                    <label style="color: white;font-size: 14pt;"><strong>   Address : </strong> {{$setting->address}} </label>
                 </div><!-- end carousel -->
             </div><!-- end col -->
         </div><!-- end row -->

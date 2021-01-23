@@ -77,15 +77,20 @@
 
 
             <div class=" navbar-collapse" id="navbars-rs-food">
-                <table>
+
                     <ul>
                         @auth
-                            <li style="font-size: 14pt"><a class="nav-link" href="#">{{ Auth::user()->name }}</a></li>
+
+                            <li style="font-size: 14pt"><a class="nav-link" href="{{route('myprofile')}}">{{ Auth::user()->name }}</a>
+
+                            </li>
+
                             <a href="{{route('logout')}}">
                                 <button type="submit" value="SEND" id="submit"
                                         class="btn btn-light btn-radius btn-brd grd1 btn-block subt">Logout
                                 </button>
                             </a>
+
                         @endauth
                         @guest
                             <a href="/login">
@@ -100,7 +105,7 @@
                             </a>
                         @endguest
                     </ul>
-                </table>
+
             </div>
         </nav>
 

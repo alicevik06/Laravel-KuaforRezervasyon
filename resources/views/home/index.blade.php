@@ -14,8 +14,11 @@
 
 @section('keywords', $setting->keywords)
 
+
+
 @section('content')
     <!-- Page Content -->
+    @include('home._slider')
     <div id="page-content-wrapper">
         <div class="section wb">
             <div class="container">
