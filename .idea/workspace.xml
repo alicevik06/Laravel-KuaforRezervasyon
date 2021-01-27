@@ -22,16 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="451e09d7-52bb-46fb-add4-48465cb679a6" name="Default Changelist" comment="Kullanıcı Profil sayfası oluşturma ve jetstream sayfasını kullanıcı paneline ekleme">
+    <list default="true" id="451e09d7-52bb-46fb-add4-48465cb679a6" name="Default Changelist" comment="Kullanıcı Profil Resmi ve users tablosuna ek alanlar ekleme işlemi">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Actions/Fortify/UpdateUserProfileInformation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/Fortify/UpdateUserProfileInformation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/jetstream.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/jetstream.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/about.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/usermenu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/usermenu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/profile/update-profile-information-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/update-profile-information-form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +206,7 @@
       <workItem from="1610826279334" duration="13168000" />
       <workItem from="1610981462424" duration="264000" />
       <workItem from="1611240253292" duration="30637000" />
-      <workItem from="1611745281541" duration="6978000" />
+      <workItem from="1611745281541" duration="10389000" />
     </task>
     <task id="LOCAL-00001" summary="Masterpage ve extend işlemleri">
       <created>1610047241606</created>
@@ -341,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611360568857</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Kullanıcı Profil Resmi ve users tablosuna ek alanlar ekleme işlemi">
+      <created>1611775788442</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1611775788442</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,7 +378,8 @@
     <MESSAGE value="Menü Alt ağaç ve iç içe ilişki fonksiyonu oluşturulması" />
     <MESSAGE value="Sayfa meta settinglerin yapılması, sosyal medya bağlantılarının dinamik şekilde düzenlenmesi , login ve logout yönlendirmelerinin yapılması." />
     <MESSAGE value="Kullanıcı Profil sayfası oluşturma ve jetstream sayfasını kullanıcı paneline ekleme" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kullanıcı Profil sayfası oluşturma ve jetstream sayfasını kullanıcı paneline ekleme" />
+    <MESSAGE value="Kullanıcı Profil Resmi ve users tablosuna ek alanlar ekleme işlemi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kullanıcı Profil Resmi ve users tablosuna ek alanlar ekleme işlemi" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1558" y="362" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610317013145">
@@ -401,10 +402,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1421" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1607283137387" />
-    <state x="1512" y="433" key="Vcs.Push.Dialog.v2" timestamp="1611360582249">
+    <state x="1512" y="433" key="Vcs.Push.Dialog.v2" timestamp="1611775799388">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1512" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1611360582249" />
+    <state x="1512" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1611775799388" />
     <state x="1583" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1611747522448">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

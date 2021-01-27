@@ -32,15 +32,18 @@ class HomeController extends Controller
 
     public function ekip()
     {
-        return view('home.about');
+        $setting = Setting::first();
+        return view('home.ekip',['setting'=>$setting]);
     }
     public function basindabiz()
     {
-        return view('home.about');
+        $setting = Setting::first();
+        return view('home.basindabiz',['setting'=>$setting]);;
     }
     public function iletisim()
     {
-        return view('home.about');
+        $setting = Setting::first();
+        return view('home.contact',['setting'=>$setting]);
     }
     public function sss()
     {
