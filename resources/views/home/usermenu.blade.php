@@ -7,11 +7,11 @@
         <td class="text-center"><a href="{{route('myprofile')}}"> Profil Bilgileri</a></td>
 
     <tr>
-        <td class="text-center"><a href="{{route('logout')}}">Randevularım</a></td>
+        <td class="text-center"><a href="#">Randevularım</a></td>
 
     </tr>
     <tr>
-        <td class="text-center"><a href="{{route('logout')}}">Mesajlarım</a></td>
+        <td class="text-center"><a href="#">Mesajlarım</a></td>
 
     </tr>
     <tr>

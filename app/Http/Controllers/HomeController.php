@@ -26,7 +26,8 @@ class HomeController extends Controller
 
     public function aboutus()
     {
-        return view('home.about');
+        $setting = Setting::first();
+        return view('home.about',['setting'=>$setting]);
     }
 
     public function ekip()
