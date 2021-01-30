@@ -31,11 +31,12 @@
     Route::get('/aboutus', [HomeController::class, 'aboutus'])->name('aboutus');
     Route::get('/sss', [HomeController::class, 'sss'])->name('sss');
     Route::get('/iletisim', [HomeController::class, 'iletisim'])->name('iletisim');
-
     Route::post('/sendmessage', [HomeController::class, 'sendmessage'])->name('sendmessage');
-
     Route::get('/ekip', [HomeController::class, 'ekip'])->name('ekip');
     Route::get('/basindabiz', [HomeController::class, 'basindabiz'])->name('basindabiz');
+
+    Route::get('/hizmet/{id}/{slug}', [HomeController::class, 'hizmet'])->name('hizmet');
+
     //Route::get('/test/{id}/{name}', [HomeController::class, 'test'])->where(['id'=>'[0-9]+','name'=>'[A-Za-z]+' ]);
     Route::get('/test/{id}/{name}', [HomeController::class, 'test'])->whereNumber('id')->whereAlpha('name')->name('test');
 

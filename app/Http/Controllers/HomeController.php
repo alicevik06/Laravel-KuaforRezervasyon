@@ -3,10 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Hizmet;
 use App\Models\Message;
 use App\Models\Setting;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use phpDocumentor\Reflection\Types\Context;
 
 class HomeController extends Controller
 {
@@ -22,7 +24,23 @@ class HomeController extends Controller
     public function index()
     {
         $setting = Setting::first();
-        return view('home.index',['setting'=>$setting]);
+        $slider= Hizmet::select('id','title','image','slug')->limit(4)->get();
+
+        #print_r($slider);
+        #exit();
+
+        $data = [
+            'setting'=>$setting,
+            'slider'=>$slider
+        ];
+        return view('home.index',$data);
+    }
+
+    public function hizmet($id,$slug)
+    {
+        $data = Hizmet::find($id);
+        print_r($data);
+        exit();
     }
 
     public function aboutus()
