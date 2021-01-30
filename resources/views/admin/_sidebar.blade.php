@@ -22,8 +22,8 @@
 
                 </li>
                 <li>
-                    <a href="chart.html">
-                        <i class="fas fa-chart-bar"></i>Store Ürünler</a>
+                    <a href="{{route ('admin_message')}}">
+                        <i class="fas fa-chart-bar"></i>İletişim Mesajları</a>
                 </li>
 
                 <li>

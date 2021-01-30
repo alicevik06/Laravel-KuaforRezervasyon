@@ -22,9 +22,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="451e09d7-52bb-46fb-add4-48465cb679a6" name="Default Changelist" comment="Kullanıcı Profil Resmi ve users tablosuna ek alanlar ekleme işlemi">
+    <list default="true" id="451e09d7-52bb-46fb-add4-48465cb679a6" name="Default Changelist" comment="Hakkımızda , Ekibimiz , Basında Biz ve İletişim Sayfalarının oluşturulması ve &#10;dinamik olarak getirilmesi">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7dffa9fa-78e6-4e7b-a93f-2f31906427c3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7dffa9fa-78e6-4e7b-a93f-2f31906427c3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,16 +174,16 @@
     <property name="DatabaseDriversLRU" value="mariadb&#10;mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/home" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\php\Ackuafor\resources\views\admin" />
       <recent name="C:\php\Ackuafor\resources\views\home" />
       <recent name="C:\php\Ackuafor\resources\views\layouts" />
-      <recent name="C:\php\Ackuafor\resources\views\admin" />
     </key>
   </component>
   <component name="RunManager">
@@ -206,7 +210,8 @@
       <workItem from="1610826279334" duration="13168000" />
       <workItem from="1610981462424" duration="264000" />
       <workItem from="1611240253292" duration="30637000" />
-      <workItem from="1611745281541" duration="10389000" />
+      <workItem from="1611745281541" duration="12322000" />
+      <workItem from="1612002921477" duration="14913000" />
     </task>
     <task id="LOCAL-00001" summary="Masterpage ve extend işlemleri">
       <created>1610047241606</created>
@@ -341,7 +346,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611775788442</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Hakkımızda , Ekibimiz , Basında Biz ve İletişim Sayfalarının oluşturulması ve &#10;dinamik olarak getirilmesi">
+      <created>1611786391088</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1611786391088</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,36 +391,37 @@
     <MESSAGE value="Sayfa meta settinglerin yapılması, sosyal medya bağlantılarının dinamik şekilde düzenlenmesi , login ve logout yönlendirmelerinin yapılması." />
     <MESSAGE value="Kullanıcı Profil sayfası oluşturma ve jetstream sayfasını kullanıcı paneline ekleme" />
     <MESSAGE value="Kullanıcı Profil Resmi ve users tablosuna ek alanlar ekleme işlemi" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kullanıcı Profil Resmi ve users tablosuna ek alanlar ekleme işlemi" />
+    <MESSAGE value="Hakkımızda , Ekibimiz , Basında Biz ve İletişim Sayfalarının oluşturulması ve &#10;dinamik olarak getirilmesi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hakkımızda , Ekibimiz , Basında Biz ve İletişim Sayfalarının oluşturulması ve &#10;dinamik olarak getirilmesi" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1558" y="362" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610317013145">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1558" y="362" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1610317013145" />
-    <state x="1700" y="458" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610751950785">
+    <state x="1700" y="458" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1612013845124">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1700" y="458" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1610751950785" />
+    <state x="1700" y="458" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1612013845124" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1610317132616">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.2560.1400@0.0.2560.1400" timestamp="1610317132616" />
-    <state x="1754" y="623" key="NewPhpFileDialog" timestamp="1611357875807">
+    <state x="1754" y="623" key="NewPhpFileDialog" timestamp="1612009598150">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1754" y="623" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1611357875807" />
+    <state x="1754" y="623" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1612009598150" />
     <state x="1421" y="345" key="SettingsEditor" timestamp="1607283137387">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1421" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1607283137387" />
-    <state x="1512" y="433" key="Vcs.Push.Dialog.v2" timestamp="1611775799388">
+    <state x="1512" y="433" key="Vcs.Push.Dialog.v2" timestamp="1611786408115">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1512" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1611775799388" />
-    <state x="1583" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1611747522448">
+    <state x="1512" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1611786408115" />
+    <state x="1583" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1612023925352">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1583" y="319" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1611747522448" />
+    <state x="1583" y="319" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1612023925352" />
   </component>
 </project>

@@ -1,5 +1,6 @@
     <?php
 
+    use App\Http\Controllers\Admin\MessageController;
     use App\Http\Controllers\HomeController;
     use App\Http\Controllers\UserController;
     use Illuminate\Support\Facades\Route;
@@ -30,6 +31,9 @@
     Route::get('/aboutus', [HomeController::class, 'aboutus'])->name('aboutus');
     Route::get('/sss', [HomeController::class, 'sss'])->name('sss');
     Route::get('/iletisim', [HomeController::class, 'iletisim'])->name('iletisim');
+
+    Route::post('/sendmessage', [HomeController::class, 'sendmessage'])->name('sendmessage');
+
     Route::get('/ekip', [HomeController::class, 'ekip'])->name('ekip');
     Route::get('/basindabiz', [HomeController::class, 'basindabiz'])->name('basindabiz');
     //Route::get('/test/{id}/{name}', [HomeController::class, 'test'])->where(['id'=>'[0-9]+','name'=>'[A-Za-z]+' ]);
@@ -58,6 +62,15 @@ Route::middleware('auth')->prefix('admin')->group(function (){
         Route::post('update/{id}', [App\Http\Controllers\Admin\HizmetController::class, 'update'])->name('admin_hizmet_update');
         Route::get('delete/{id}', [App\Http\Controllers\Admin\HizmetController::class, 'destroy'])->name('admin_hizmet_delete');
         Route::get('show', [App\Http\Controllers\Admin\HizmetController::class, 'show'])->name('admin_hizmet_show');
+    });
+
+    Route::prefix('messages')->group(function (){
+
+        Route::get('/', [MessageController::class, 'index'])->name('admin_message');
+        Route::get('edit/{id}', [MessageController::class, 'edit'])->name('admin_message_edit');
+        Route::post('update/{id}', [MessageController::class, 'update'])->name('admin_message_update');
+        Route::get('delete/{id}', [MessageController::class, 'destroy'])->name('admin_message_delete');
+        Route::get('show', [MessageController::class, 'show'])->name('admin_message_show');
     });
 
     #Hizmet Image Gallery
