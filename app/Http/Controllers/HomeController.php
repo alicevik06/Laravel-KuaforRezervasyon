@@ -36,11 +36,23 @@ class HomeController extends Controller
         return view('home.index',$data);
     }
 
+
+
     public function hizmet($id,$slug)
     {
         $data = Hizmet::find($id);
         print_r($data);
         exit();
+    }
+
+    public function menuhizmetler($id,$slug)
+    {
+        $datalist = Hizmet::where('category_id',$id)->get();
+        $data = Category::find($id);
+        # print_r($data);
+        # exit();
+
+        return view('home.menu_hizmetler',['datalist'=>$datalist,'data'=>$data]);
     }
 
     public function aboutus()

@@ -10,7 +10,7 @@
             <hr>
 
         @else
-            <li  class="nav-item"><a class="nav-link" href="#">->{{$subcategory->title}}</a></li>
+            <li  class="nav-item"><a class="nav-link" href="{{route('menuhizmetler',['id'=>$subcategory->id, 'slug'=>$subcategory->slug])}}">->{{$subcategory->title}}</a></li>
         @endif
 
 @endforeach
