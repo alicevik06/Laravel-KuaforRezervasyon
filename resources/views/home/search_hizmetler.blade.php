@@ -5,14 +5,10 @@
 
 @extends('layouts.home')
 
-@section('title',$data->title . " Hizmetleri" )
+@section('title',$search . " Hizmetleri" )
 
 
-@section('description')
-    {{ $data->description }}
-@endsection
 
-@section('keywords', $data->keywords)
 
 @section('content')
 
@@ -29,13 +25,13 @@
                             </div>
 
                             <div class="title--heading">
-                                <h1>{{$data->title}}  Hizmetleri</h1>
+                                <h1>{{$search}}  Hizmetleri</h1>
                             </div>
                             <div class="clearfix"></div>
 
                             <ol class="breadcrumb">
                                 <li><a href="{{route('home')}}">Home /</a></li>
-                                <li class="active"> {{\App\Http\Controllers\Admin\CategoryController::getParentsTree($data,$data->title)}} </li>
+                                <li class="active">  </li>
                             </ol>
                         </div>
                         <!-- .title end -->
@@ -62,7 +58,7 @@
                             @foreach($datalist as $rs)
 
                             <div class="col-md-4">
-                                <div style="height: 300px"class="service-wrap text-center clearfix">
+                                <div style="height: 300px" class="service-wrap text-center clearfix">
                                     <div  class="uptop">
                                         <img src="{{Storage::url($rs->image)}}" alt="" class="img-responsive img-rounded alignleft">
                                     </div>

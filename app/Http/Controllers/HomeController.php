@@ -63,6 +63,29 @@ class HomeController extends Controller
         return view('home.hizmet_detail',['datalist'=>$datalist,'data'=>$data]);
     }
 
+    public function getHizmet(Request $request)
+    {
+        $search=$request->input('search');
+
+        $count = Hizmet::where('title','like','%'.$search.'%')->get()->count();
+        if($count==1)
+        {
+            $data= Hizmet::where('title','like','%'.$search.'%')->first();
+            return redirect()->route('hizmet',['id'=>$data->id,'slug'=>$data->slug]);
+        }
+        else
+        {
+            return redirect()->route('hizmetlist',['search'=>$search]);
+        }
+
+    }
+
+    public function hizmetlist($search)
+    {
+        $datalist= Hizmet::where('title','like','%'.$search.'%')->get();
+        return view('home.search_hizmetler',['search'=>$search,'datalist'=>$datalist]);
+    }
+
     public function menuhizmetler($id,$slug)
     {
         $datalist = Hizmet::where('category_id',$id)->get();

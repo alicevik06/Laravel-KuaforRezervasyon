@@ -66,6 +66,8 @@
             </div>
         </div>
 
+
+
         <nav style="width: 230px;" class="navbar navbar-expand-lg navbar-light bg-light text-center">
             @auth
                 <img style="width: 70px;height: 70px;" src="{{ asset('assets') }}/uploads/ussr.png">

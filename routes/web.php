@@ -38,6 +38,8 @@
     Route::get('/hizmet/{id}/{slug}', [HomeController::class, 'hizmet'])->name('hizmet');
     Route::get('/menuhizmetler/{id}/{slug}', [HomeController::class, 'menuhizmetler'])->name('menuhizmetler');
 
+    Route::post('/getHizmet',[HomeController::class, 'getHizmet'])->name('getHizmet');
+    Route::get('/hizmetlist/{search}', [HomeController::class, 'hizmetlist'])->name('hizmetlist');
     //Route::get('/test/{id}/{name}', [HomeController::class, 'test'])->where(['id'=>'[0-9]+','name'=>'[A-Za-z]+' ]);
     Route::get('/test/{id}/{name}', [HomeController::class, 'test'])->whereNumber('id')->whereAlpha('name')->name('test');
 

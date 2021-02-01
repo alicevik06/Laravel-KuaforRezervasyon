@@ -19,6 +19,18 @@
 @section('content')
     <!-- Page Content -->
     @include('home._slider')
+
+    <!-- Search Form -->
+    <form action="{{route('getHizmet')}}" class="form-wrapper cf"  method="post">
+        @csrf
+        @livewire('search')
+        <button style="height: 50px" type="submit">ARA</button>
+    </form>
+    @livewireScripts
+    <!-- End Search Form -->
+
+
+
     <div id="page-content-wrapper">
         <div class="section wb">
             <div class="container">
