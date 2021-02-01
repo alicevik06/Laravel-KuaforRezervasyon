@@ -32,11 +32,13 @@ class HomeController extends Controller
         $ErkekBakim=Hizmet::select('id','title','description','price','slug')->where('category_id','8')->limit(3)->get();
         $KadinSac=Hizmet::select('id','title','description','price','slug')->where('category_id','10')->limit(3)->get();
         $KadinBakim=Hizmet::select('id','title','description','price','slug')->where('category_id','11')->limit(3)->get();
+        $resim= Hizmet::select('id','title','image','slug')->limit(6)->inRandomOrder()->get();
         #print_r($pricelist);
         #exit();
 
         $data = [
             'ErkekSac'=>$ErkekSac,
+            'resim'=>$resim,
             'ErkekSakal'=>$ErkekSakal,
             'ErkekBakim'=>$ErkekBakim,
             'KadinSac'=>$KadinSac,
