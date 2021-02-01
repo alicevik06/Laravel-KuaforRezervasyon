@@ -22,10 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="451e09d7-52bb-46fb-add4-48465cb679a6" name="Default Changelist" comment="Anasayfa Hizmetler içeriğinin controllerde sorgulanarak getirilmesi ve sayfaya hizmet fiyat listesi eklenmesi.">
+    <list default="true" id="451e09d7-52bb-46fb-add4-48465cb679a6" name="Default Changelist" comment="Anasayfa Resim Galerisi oluşturma">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/menu_hizmetler.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/menu_hizmetler.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +209,7 @@
       <workItem from="1610981462424" duration="264000" />
       <workItem from="1611240253292" duration="30637000" />
       <workItem from="1611745281541" duration="12322000" />
-      <workItem from="1612002921477" duration="34858000" />
+      <workItem from="1612002921477" duration="38930000" />
     </task>
     <task id="LOCAL-00001" summary="Masterpage ve extend işlemleri">
       <created>1610047241606</created>
@@ -378,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612139147976</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Anasayfa Resim Galerisi oluşturma">
+      <created>1612180616416</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1612180616416</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -421,7 +429,8 @@
     <MESSAGE value="Ana sayfa Slider dinamik hale getirilmesi" />
     <MESSAGE value="Menü Alt Hizmetlerin listelenmesi ve sayfaların oluşuturulması" />
     <MESSAGE value="Anasayfa Hizmetler içeriğinin controllerde sorgulanarak getirilmesi ve sayfaya hizmet fiyat listesi eklenmesi." />
-    <option name="LAST_COMMIT_MESSAGE" value="Anasayfa Hizmetler içeriğinin controllerde sorgulanarak getirilmesi ve sayfaya hizmet fiyat listesi eklenmesi." />
+    <MESSAGE value="Anasayfa Resim Galerisi oluşturma" />
+    <option name="LAST_COMMIT_MESSAGE" value="Anasayfa Resim Galerisi oluşturma" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1558" y="362" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610317013145">
@@ -444,10 +453,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1421" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1607283137387" />
-    <state x="1512" y="433" key="Vcs.Push.Dialog.v2" timestamp="1612139166322">
+    <state x="1512" y="433" key="Vcs.Push.Dialog.v2" timestamp="1612180625633">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1512" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1612139166322" />
+    <state x="1512" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1612180625633" />
     <state x="1583" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1612023925352">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

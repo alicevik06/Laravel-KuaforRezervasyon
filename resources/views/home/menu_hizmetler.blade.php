@@ -52,10 +52,8 @@
                     <div class="container">
                         <div class="section-title row text-center">
                             <div class="col-md-8 offset-md-2">
-                                <small>WELCOME TO THE OUR BARBER SHOP</small>
-                                <h3>OUR SERVICES</h3>
+                                <h3>Hizmetlerimiz</h3>
                                 <hr class="grd1">
-                                <p class="lead">Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus. Sed a tellus quis mi rhoncus dignissim.</p>
                             </div>
                         </div><!-- end title -->
 

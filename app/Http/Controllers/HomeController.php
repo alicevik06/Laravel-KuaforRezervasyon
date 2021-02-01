@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use App\Models\Hizmet;
+use App\Models\Image;
 use App\Models\Message;
 use App\Models\Setting;
 use Illuminate\Http\Request;
@@ -56,8 +57,10 @@ class HomeController extends Controller
     public function hizmet($id,$slug)
     {
         $data = Hizmet::find($id);
-        print_r($data);
-        exit();
+        $datalist = Image::where('hizmet_id',$id)->get();
+        #print_r($data);
+        #exit();
+        return view('home.hizmet_detail',['datalist'=>$datalist,'data'=>$data]);
     }
 
     public function menuhizmetler($id,$slug)

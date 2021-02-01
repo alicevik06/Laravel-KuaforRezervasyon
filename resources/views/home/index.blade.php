@@ -43,11 +43,6 @@
 
                 <hr class="hr1">
 
-
-
-
-
-
             </div><!-- end container -->
         </div><!-- end section -->
 
