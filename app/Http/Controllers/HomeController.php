@@ -25,13 +25,26 @@ class HomeController extends Controller
     {
         $setting = Setting::first();
         $slider= Hizmet::select('id','title','image','slug')->limit(4)->get();
-
-        #print_r($slider);
+        $pricelist= Hizmet::select('id','title','image','price','slug')->limit(4)->get();
+        $aboutt=Setting::select('aboutus')->get();
+        $ErkekSac=Hizmet::select('id','title','description','price','slug')->where('category_id','5')->limit(3)->get();
+        $ErkekSakal=Hizmet::select('id','title','description','price','slug')->where('category_id','7')->limit(3)->get();
+        $ErkekBakim=Hizmet::select('id','title','description','price','slug')->where('category_id','8')->limit(3)->get();
+        $KadinSac=Hizmet::select('id','title','description','price','slug')->where('category_id','10')->limit(3)->get();
+        $KadinBakim=Hizmet::select('id','title','description','price','slug')->where('category_id','11')->limit(3)->get();
+        #print_r($pricelist);
         #exit();
 
         $data = [
+            'ErkekSac'=>$ErkekSac,
+            'ErkekSakal'=>$ErkekSakal,
+            'ErkekBakim'=>$ErkekBakim,
+            'KadinSac'=>$KadinSac,
+            'KadinBakim'=>$KadinBakim,
             'setting'=>$setting,
-            'slider'=>$slider
+            'slider'=>$slider,
+            'pricelist'=> $pricelist,
+            'aboutt'=>$aboutt
         ];
         return view('home.index',$data);
     }

@@ -10,7 +10,7 @@
                     <h2><strong>{{$rs->title}}</strong><br>
                         </h2>
                     <p class="lead">Daha Fazla bilgi almak için tıklayınız.</p>
-                    <a href="{{route('hizmet',['id'=>$rs->id,'slug'=>$rs->slug])}}" class="btn btn-light btn-radius btn-brd grd1 effect-1 butn">Contact US</a>
+                    <a href="{{route('hizmet',['id'=>$rs->id,'slug'=>$rs->slug])}}" class="btn btn-light btn-radius btn-brd grd1 effect-1 butn">Devam Edin</a>
                 </div>
             </div>
         </div>

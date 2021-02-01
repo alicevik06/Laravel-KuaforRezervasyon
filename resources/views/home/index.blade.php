@@ -25,13 +25,13 @@
                 <div class="row align-items-center">
                     <div class="col-md-6 text-left">
                         <div class="message-box">
-                            <h4>About</h4>
-                            <h2>Welcome to SMBarber</h2>
-                            <p class="lead">Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus. Sed a tellus quis mi rhoncus dignissim.</p>
+                            <h4>Hoşgeldiniz</h4>
+                            <h2>Saç Kesiminiz Size Özel Olmalıdır. Aynı Parmak İziniz Gibi</h2>
+                            @foreach($aboutt as $rs)
+                            <p> {!! $rs->aboutus !!} </p>
 
-                            <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed vitae rutrum neque. Ut id erat sit amet libero bibendum aliquam. Donec ac egestas libero, eu bibendum risus. Phasellus et congue justo. </p>
-
-                            <a href="#services" data-scroll class="btn btn-light btn-radius btn-brd grd1 effect-1">Learn More</a>
+                            <a href="{{route('basindabiz')}}" data-scroll class="btn btn-light btn-radius btn-brd grd1 effect-1">Basında Kalitemiz</a>
+                            @endforeach
                         </div><!-- end messagebox -->
                     </div><!-- end col -->
                     <div class="col-md-6 text-center">
@@ -77,79 +77,7 @@
 
                 <hr class="hr1">
 
-                <div class="row text-center">
-                    <div class="col-lg-12">
-                        <div class="owl-services owl-carousel owl-theme">
 
-                            <div class="service-widget">
-                                <div class="post-media wow fadeIn">
-                                    <a href="{{ asset('assets') }}/uploads/barber_01.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                                    <img src="{{ asset('assets') }}/uploads/barber_01.jpg" alt="" class="img-responsive img-rounded">
-                                </div>
-                                <div class="dit-box">
-                                    <h3>Show us Your Graft Style</h3>
-                                    <p>Aliquam sagittis ligula et sem lacinia, ut facilisis enim sollicitudin. Proin nisi est, convallis nec purus vitae, iaculis posuere sapien. Cum sociis natoque.</p>
-                                </div>
-                            </div><!-- end service -->
-
-                            <div class="service-widget">
-                                <div class="post-media wow fadeIn">
-                                    <a href="{{ asset('assets') }}/uploads/barber_02.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                                    <img src="{{ asset('assets') }}/uploads/barber_02.jpg" alt="" class="img-responsive img-rounded">
-                                </div>
-                                <div class="dit-box">
-                                    <h3>Outstanding Barber Shop</h3>
-                                    <p>Duis at tellus at dui tincidunt scelerisque nec sed felis. Suspendisse id dolor sed leo rutrum euismod. Nullam vestibulum fermentum erat. It nam auctor. </p>
-                                </div>
-                            </div><!-- end service -->
-
-                            <div class="service-widget">
-                                <div class="post-media wow fadeIn">
-                                    <a href="{{ asset('assets') }}/uploads/barber_03.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                                    <img src="{{ asset('assets') }}/uploads/barber_03.jpg" alt="" class="img-responsive img-rounded">
-                                </div>
-                                <div class="dit-box">
-                                    <h3>The Barber Materials</h3>
-                                    <p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet lacus vitae massa sodales aliquam at eget quam. Integer ultricies et magna quis posuere.</p>
-                                </div>
-                            </div><!-- end service -->
-
-                            <div class="service-widget">
-                                <div class="post-media wow fadeIn">
-                                    <a href="{{ asset('assets') }}/uploads/barber_04.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                                    <img src="{{ asset('assets') }}/uploads/barber_04.jpg" alt="" class="img-responsive img-rounded">
-                                </div>
-                                <div class="dit-box">
-                                    <h3>The Barber Materials</h3>
-                                    <p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet lacus vitae massa sodales aliquam at eget quam. Integer ultricies et magna quis posuere.</p>
-                                </div>
-                            </div><!-- end service -->
-
-                            <div class="service-widget">
-                                <div class="post-media wow fadeIn">
-                                    <a href="{{ asset('assets') }}/uploads/barber_05.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                                    <img src="{{ asset('assets') }}/uploads/barber_05.jpg" alt="" class="img-responsive img-rounded">
-                                </div>
-                                <div class="dit-box">
-                                    <h3>The Barber Materials</h3>
-                                    <p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet lacus vitae massa sodales aliquam at eget quam. Integer ultricies et magna quis posuere.</p>
-                                </div>
-                            </div><!-- end service -->
-
-                            <div class="service-widget">
-                                <div class="post-media wow fadeIn">
-                                    <a href="{{ asset('assets') }}/uploads/barber_06.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                                    <img src="{{ asset('assets') }}/uploads/barber_06.jpg" alt="" class="img-responsive img-rounded">
-                                </div>
-                                <div class="dit-box">
-                                    <h3>The Barber Materials</h3>
-                                    <p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet lacus vitae massa sodales aliquam at eget quam. Integer ultricies et magna quis posuere.</p>
-                                </div>
-                            </div><!-- end service -->
-
-                        </div>
-                    </div>
-                </div><!-- end row -->
             </div><!-- end container -->
         </div><!-- end section -->
 
@@ -157,8 +85,8 @@
             <div class="container">
                 <div class="section-title row text-center">
                     <div class="col-md-8 offset-md-2">
-                        <small>OUR BABRER PRICING</small>
-                        <h3>BABRER PRICING</h3>
+                        <small></small>
+                        <h3>Erkek Bölümü Hizmetlerimiz</h3>
                     </div>
                 </div><!-- end title -->
                 <div class="row flex-items-xs-middle flex-items-xs-center">
@@ -168,23 +96,16 @@
                         <div class="card text-center">
                             <div class="card-block">
                                 <h4 class="card-title pricing-ti">
-                                    Shaving
+                                    Saç
                                 </h4>
+                                @foreach($ErkekSac as $rs)
                                 <div class="line-pricing">
-                                    <h5>Lorem ipsum dolor</h5>
-                                    <p>Donec eu diam ante. Nam non porta ipsum, nec tristique odio. Etiam vel libero non massa rutrum molestie non non ipsum.</p>
-                                    <a href="#">$ 5</a>
+                                    <h5>{{$rs->title}}</h5>
+                                    <p>{{$rs->description}}</p>
+                                    <a href="#">{{$rs->price}}₺</a>
                                 </div>
-                                <div class="line-pricing">
-                                    <h5>Lorem ipsum dolor</h5>
-                                    <p>Donec eu diam ante. Nam non porta ipsum, nec tristique odio. Etiam vel libero non massa rutrum molestie non non ipsum.</p>
-                                    <a href="#">$ 10</a>
-                                </div>
-                                <div class="line-pricing">
-                                    <h5>Lorem ipsum dolor</h5>
-                                    <p>Donec eu diam ante. Nam non porta ipsum, nec tristique odio. Etiam vel libero non massa rutrum molestie non non ipsum.</p>
-                                    <a href="#">$ 15</a>
-                                </div>
+                                @endforeach
+
                             </div>
                         </div>
                     </div>
@@ -194,23 +115,15 @@
                         <div class="card text-center">
                             <div class="card-block">
                                 <h4 class="card-title pricing-ti">
-                                    Face Masking
+                                    Sakal
                                 </h4>
+                                @foreach($ErkekSakal as $rs)
                                 <div class="line-pricing">
-                                    <h5>Lorem ipsum dolor</h5>
-                                    <p>Donec eu diam ante. Nam non porta ipsum, nec tristique odio. Etiam vel libero non massa rutrum molestie non non ipsum.</p>
-                                    <a href="#">$ 5</a>
+                                    <h5>{{$rs->title}}</h5>
+                                    <p>{{$rs->description}}</p>
+                                    <a href="#">{{$rs->price}}₺</a>
                                 </div>
-                                <div class="line-pricing">
-                                    <h5>Lorem ipsum dolor</h5>
-                                    <p>Donec eu diam ante. Nam non porta ipsum, nec tristique odio. Etiam vel libero non massa rutrum molestie non non ipsum.</p>
-                                    <a href="#">$ 10</a>
-                                </div>
-                                <div class="line-pricing">
-                                    <h5>Lorem ipsum dolor</h5>
-                                    <p>Donec eu diam ante. Nam non porta ipsum, nec tristique odio. Etiam vel libero non massa rutrum molestie non non ipsum.</p>
-                                    <a href="#">$ 15</a>
-                                </div>
+                                @endforeach
                             </div>
                         </div>
                     </div>
@@ -220,23 +133,67 @@
                         <div class="card text-center">
                             <div class="card-block">
                                 <h4 class="card-title pricing-ti">
-                                    Hair Styling
+                                    Bakım
                                 </h4>
+                                @foreach($ErkekBakim as $rs)
                                 <div class="line-pricing">
-                                    <h5>Lorem ipsum dolor</h5>
-                                    <p>Donec eu diam ante. Nam non porta ipsum, nec tristique odio. Etiam vel libero non massa rutrum molestie non non ipsum.</p>
-                                    <a href="#">$ 5</a>
+                                    <h5>{{$rs->title}}</h5>
+                                    <p>{{$rs->description}}</p>
+                                    <a href="#">{{$rs->price}}₺</a>
                                 </div>
-                                <div class="line-pricing">
-                                    <h5>Lorem ipsum dolor</h5>
-                                    <p>Donec eu diam ante. Nam non porta ipsum, nec tristique odio. Etiam vel libero non massa rutrum molestie non non ipsum.</p>
-                                    <a href="#">$ 10</a>
-                                </div>
-                                <div class="line-pricing">
-                                    <h5>Lorem ipsum dolor</h5>
-                                    <p>Donec eu diam ante. Nam non porta ipsum, nec tristique odio. Etiam vel libero non massa rutrum molestie non non ipsum.</p>
-                                    <a href="#">$ 15</a>
-                                </div>
+                                @endforeach
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="pricing" class="section lb">
+            <div class="container">
+                <div class="section-title row text-center">
+                    <div class="col-md-8 offset-md-2">
+                        <small></small>
+                        <h3>Bayan Bölümü Hizmetlerimiz</h3>
+                    </div>
+                </div><!-- end title -->
+                <div class="row flex-items-xs-middle flex-items-xs-center">
+
+                    <!-- Table #1  -->
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="card text-center">
+                            <div class="card-block">
+                                <h4 class="card-title pricing-ti">
+                                    Saç
+                                </h4>
+                                @foreach($KadinSac as $rs)
+                                    <div class="line-pricing">
+                                        <h5>{{$rs->title}}</h5>
+                                        <p>{{$rs->description}}</p>
+                                        <a href="#">{{$rs->price}}₺</a>
+                                    </div>
+                                @endforeach
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Table #1  -->
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="card text-center">
+                            <div class="card-block">
+                                <h4 class="card-title pricing-ti">
+                                    Bakım
+                                </h4>
+                                @foreach($KadinBakim as $rs)
+                                    <div class="line-pricing">
+                                        <h5>{{$rs->title}}</h5>
+                                        <p>{{$rs->description}}</p>
+                                        <a href="#">{{$rs->price}}₺</a>
+                                    </div>
+                                @endforeach
                             </div>
                         </div>
                     </div>
@@ -245,96 +202,7 @@
         </div>
 
 
-        <div id="barbers" class="section lb">
-            <div class="container">
-                <div class="section-title row text-center">
-                    <div class="col-md-8 offset-md-2">
-                        <small>MEET OUR BABRER TEAM</small>
-                        <h3>OUR BARBERS</h3>
-                    </div>
-                </div><!-- end title -->
 
-                <div class="row dev-list text-center">
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <div class="widget our-inner-taem clearfix">
-                            <div class="t-top"></div>
-                            <div class="hover-br">
-                                <img src="{{ asset('assets') }}/uploads/barber_team_01.jpg" alt="" class="img-responsive">
-                                <div class="social-up-hover">
-                                    <div class="footer-social">
-                                        <a href="#" class="btn grd1"><i class="fa fa-facebook"></i></a>
-                                        <a href="#" class="btn grd1"><i class="fa fa-github"></i></a>
-                                        <a href="#" class="btn grd1"><i class="fa fa-twitter"></i></a>
-                                        <a href="#" class="btn grd1"><i class="fa fa-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="team-box">
-                                <div class="widget-title">
-                                    <h3>Soren Bo Bostian</h3>
-                                    <small>The Founder</small>
-                                </div>
-                                <!-- end title -->
-                                <p>Hello guys, I am Soren from Sirbistana. I am senior art director and founder of The Barber Shop Company.</p>
-                            </div>
-                            <div class="t-bottom"></div>
-                        </div><!--widget -->
-                    </div><!-- end col -->
-
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
-                        <div class="widget our-inner-taem clearfix">
-                            <div class="t-top"></div>
-                            <div class="hover-br">
-                                <img src="{{ asset('assets') }}/uploads/barber_team_03.jpg" alt="" class="img-responsive">
-                                <div class="social-up-hover">
-                                    <div class="footer-social">
-                                        <a href="#" class="btn grd1"><i class="fa fa-facebook"></i></a>
-                                        <a href="#" class="btn grd1"><i class="fa fa-github"></i></a>
-                                        <a href="#" class="btn grd1"><i class="fa fa-twitter"></i></a>
-                                        <a href="#" class="btn grd1"><i class="fa fa-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="team-box">
-                                <div class="widget-title">
-                                    <h3>Bryan Saftler</h3>
-                                    <small>The Barber</small>
-                                </div>
-                                <!-- end title -->
-                                <p>Hello guys, I am Soren from Sirbistana. I am senior art director and barber of the Barber Shop Market.</p>
-                            </div>
-                            <div class="t-bottom"></div>
-                        </div><!--widget -->
-                    </div><!-- end col -->
-
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
-                        <div class="widget our-inner-taem clearfix">
-                            <div class="t-top"></div>
-                            <div class="hover-br">
-                                <img src="{{ asset('assets') }}/uploads/barber_team_02.jpg" alt="" class="img-responsive">
-                                <div class="social-up-hover">
-                                    <div class="footer-social">
-                                        <a href="#" class="btn grd1"><i class="fa fa-facebook"></i></a>
-                                        <a href="#" class="btn grd1"><i class="fa fa-github"></i></a>
-                                        <a href="#" class="btn grd1"><i class="fa fa-twitter"></i></a>
-                                        <a href="#" class="btn grd1"><i class="fa fa-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="team-box">
-                                <div class="widget-title">
-                                    <h3>Matthew Bayliss</h3>
-                                    <small>The Barber</small>
-                                </div>
-                                <!-- end title -->
-                                <p>Hello guys, I am Soren from Sirbistana. I am senior art director and barber of the Barber Shop Website.</p>
-                            </div>
-                            <div class="t-bottom"></div>
-                        </div><!--widget -->
-                    </div><!-- end col -->
-                </div><!-- end row -->
-            </div><!-- end container -->
-        </div><!-- end section -->
     </div>
 @endsection
 
