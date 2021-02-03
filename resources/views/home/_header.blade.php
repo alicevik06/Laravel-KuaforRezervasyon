@@ -62,11 +62,10 @@
                     <li class="nav-item"><a class="nav-link" href="{{route('iletisim')}}">İletişim</a></li>
 
 
+
                 </ul>
             </div>
         </div>
-
-
 
         <nav style="width: 230px;" class="navbar navbar-expand-lg navbar-light bg-light text-center">
             @auth

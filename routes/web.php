@@ -22,11 +22,9 @@
 
     Route::redirect('/anasayfa', '/home')->name('anasayfa');
 
-    Route::get('/', function () {
-        return view('home.index');
-    });
 
 
+    Route::get('/', [HomeController::class, 'index'])->name('home');
     Route::get('/home', [HomeController::class, 'index'])->name('home');
     Route::get('/aboutus', [HomeController::class, 'aboutus'])->name('aboutus');
     Route::get('/sss', [HomeController::class, 'sss'])->name('sss');
