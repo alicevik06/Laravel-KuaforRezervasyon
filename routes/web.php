@@ -4,6 +4,7 @@
     use App\Http\Controllers\HomeController;
     use App\Http\Controllers\UserController;
     use Illuminate\Support\Facades\Route;
+    use App\Http\Livewire\Rezervasyon;
 
     /*
     |--------------------------------------------------------------------------
@@ -32,6 +33,9 @@
     Route::post('/sendmessage', [HomeController::class, 'sendmessage'])->name('sendmessage');
     Route::get('/ekip', [HomeController::class, 'ekip'])->name('ekip');
     Route::get('/basindabiz', [HomeController::class, 'basindabiz'])->name('basindabiz');
+
+    Route::get('/rezervasyon', [HomeController::class, 'rezervasyon'])->name('rezervasyon');
+   // Route::get('/talephizmet', [Rezervasyon::class, 'talephizmet'])->name('talephizmet');
 
     Route::get('/hizmet/{id}/{slug}', [HomeController::class, 'hizmet'])->name('hizmet');
     Route::get('/menuhizmetler/{id}/{slug}', [HomeController::class, 'menuhizmetler'])->name('menuhizmetler');
@@ -84,6 +88,17 @@ Route::middleware('auth')->prefix('admin')->group(function (){
         Route::get('show', [App\Http\Controllers\Admin\ImageController::class, 'show'])->name('admin_image_show');
     });
 
+
+
+    Route::prefix('rezervasyon')->group(function (){
+        Route::get('/',[\App\Http\Controllers\Admin\RezervasyonController::class,'index'])->name('admin_rezervasyon');
+        Route::post('update/{id}',[\App\Http\Controllers\Admin\RezervasyonController::class,'update'])->name('admin_rezervasyon_update');
+        Route::get('delete/{id}',[\App\Http\Controllers\Admin\RezervasyonController::class,'destroy'])->name('admin_rezervasyon_delete');
+        Route::get('show/{id}',[\App\Http\Controllers\Admin\RezervasyonController::class,'show'])->name('admin_rezervasyon_show');
+
+    });
+
+
     #Site Setting
 
 
@@ -97,6 +112,9 @@ Route::middleware('auth')->prefix('admin')->group(function (){
     Route::middleware('auth')->prefix('myaccount')->namespace('myaccount')->group(function (){
 
         Route::get('/', [UserController::class, 'index'])->name('myprofile');
+        Route::get('/myrezervasyon', [UserController::class, 'myrezervasyon'])->name('myrezervasyon');
+        Route::get('/destroyrez/{id}', [UserController::class, 'destroyrez'])->name('user_rezervasyon_delete');
+
     });
 
 

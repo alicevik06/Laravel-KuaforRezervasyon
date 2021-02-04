@@ -1,13 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
-use App\Http\Livewire\Rezervasyon;
-use App\Models\User;
+use App\Http\Controllers\Controller;
+use App\Models\Rezervasyon;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 
-class UserController extends Controller
+class RezervasyonController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,25 +15,9 @@ class UserController extends Controller
      */
     public function index()
     {
-        return view('home.user_profile');
+        $datalist = Rezervasyon::all();
+        return view('admin.rezervasyon',['datalist'=>$datalist]);
     }
-
-    public function myrezervasyon()
-    {
-       $datalist = \App\Models\Rezervasyon::where('user_id','=',Auth::user()->id)->get();
-       return view('home.user_rez',['datalist'=>$datalist]);
-    }
-
-
-    public function destroyrez(Rezervasyon $rezervasyon,$id)
-    {
-        $data = \App\Models\Rezervasyon::find($id);
-        $data->delete();
-        return redirect()->back()->with('success','Rezervasyon Silindi');
-    }
-
-
-
 
     /**
      * Show the form for creating a new resource.
@@ -60,21 +43,22 @@ class UserController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\User  $user
+     * @param  \App\Models\Rezervasyon  $rezervasyon
      * @return \Illuminate\Http\Response
      */
-    public function show(User $user)
+    public function show(Rezervasyon $rezervasyon,$id)
     {
-        //
+        $data=Rezervasyon::find($id);
+        return view('admin.rezervasyon_edit',['data'=>$data]);
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\User  $user
+     * @param  \App\Models\Rezervasyon  $rezervasyon
      * @return \Illuminate\Http\Response
      */
-    public function edit(User $user)
+    public function edit(Rezervasyon $rezervasyon)
     {
         //
     }
@@ -83,22 +67,27 @@ class UserController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\User  $user
+     * @param  \App\Models\Rezervasyon  $rezervasyon
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, User $user)
+    public function update(Request $request, Rezervasyon $rezervasyon,$id)
     {
-        //
+        $data = Rezervasyon::find($id);
+        $data->status=$request->input('status');
+        $data->save();
+        return back()->with('success','Rezervasyon Güncellendi');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\User  $user
+     * @param  \App\Models\Rezervasyon  $rezervasyon
      * @return \Illuminate\Http\Response
      */
-    public function destroy(User $user)
+    public function destroy(Rezervasyon $rezervasyon,$id)
     {
-        //
+        $data = Rezervasyon::find($id);
+        $data->delete();
+        return redirect()->back()->with('success','Rezervasyon Silindi');
     }
 }

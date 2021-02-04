@@ -15,4 +15,8 @@ class Hizmet extends Model
     {
         return $this->belongsTo(Category::class);
     }
+    public function rezs()
+    {
+        return $this->hasMany(Rezervasyon::class);
+    }
 }

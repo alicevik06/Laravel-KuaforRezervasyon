@@ -59,7 +59,7 @@
 
                                         <p>{!! $data->detail !!}</p>
 
-                                        <a href="{{route('basindabiz')}}" data-scroll
+                                        <a href="{{route('rezervasyon')}}" data-scroll
                                            class="btn btn-light btn-radius btn-brd grd1 effect-1">Randevu Al</a>
 
                                     </div><!-- end messagebox -->
@@ -82,38 +82,62 @@
 
             </div>
 
-            <!-- Resim Galerisi -->
-            <div style="background-color: white" id="pricing" class="section lb">
-                <div style="background-color: white" class="container">
-                    <div class="section-title row text-center">
-                        <div class="col-md-8 offset-md-2 text-center">
-                            <small></small>
-                            <h3>Resim Galerisi</h3>
-                        </div>
-                    </div><!-- end title -->
-                    <div class="row flex-items-xs-middle flex-items-xs-center ">
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="about-tab">
+                        <ul class="nav nav-pills nav-justified" id="myTab" role="tablist">
+                            <li class="nav-item"><a class="nav-link active" href="#tab_a" data-toggle="tab">Resim Galerisi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#tab_b" data-toggle="tab">Rezervasyon</a></li>
+
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="tab_a">
+
+                                <!-- Resim Galerisi -->
+                                <div style="background-color: white" id="pricing" class="section lb">
+                                    <div style="background-color: white" class="container">
+
+                                        <div class="row flex-items-xs-middle flex-items-xs-center ">
 
 
 
-                        <!-- Table #1  -->
-                        @foreach($datalist as $rs)
-                            <div class="col-xs-12 col-lg-4">
-                                <div class="card text-center">
-                                    <div class="card-block">
+                                            <!-- Table #1  -->
+                                            @foreach($datalist as $rs)
+                                                <div class="col-xs-12 col-lg-4">
+                                                    <div class="card text-center">
+                                                        <div class="card-block">
 
 
-                                        <div class="line-pricing">
-                                            <img style="width: 300px;height: 180px;" class="text-center item  display-table overlay" src="{{Storage::url($rs->image)}}" alt="" >
+                                                            <div class="line-pricing">
+                                                                <img style="width: 300px;height: 180px;" class="text-center item  display-table overlay" src="{{Storage::url($rs->image)}}" alt="" >
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            @endforeach
                                         </div>
-
                                     </div>
                                 </div>
+                                <!--End Resim Galerisi -->
+
                             </div>
-                        @endforeach
+                            <div class="tab-pane fade" id="tab_b">
+
+                                @livewire('rezervasyon', ['id'=>$data->id])
+                                @livewireScripts
+                            </div>
+
+                        </div><!-- tab content -->
                     </div>
-                </div>
-            </div>
-            <!--End Resim Galerisi -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+
+
+
         </div>
     </div>
+
 @endsection

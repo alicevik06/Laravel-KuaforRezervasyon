@@ -61,8 +61,6 @@
                     <li class="nav-item"><a class="nav-link" href="{{route('basindabiz')}}">Basında Biz</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{route('iletisim')}}">İletişim</a></li>
 
-
-
                 </ul>
             </div>
         </div>

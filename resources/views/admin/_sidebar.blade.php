@@ -27,8 +27,8 @@
                 </li>
 
                 <li>
-                    <a href="table.html">
-                        <i class="fas fa-table"></i>Tables</a>
+                    <a href="{{route ('admin_rezervasyon')}}">
+                        <i class="fas fa-table"></i>Rezervasyonlar</a>
                 </li>
 
                 <li class="has-sub">

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Livewire\Rezervasyon;
 use App\Models\Category;
 use App\Models\Hizmet;
 use App\Models\Image;
@@ -63,6 +64,8 @@ class HomeController extends Controller
         return view('home.hizmet_detail',['datalist'=>$datalist,'data'=>$data]);
     }
 
+
+
     public function getHizmet(Request $request)
     {
         $search=$request->input('search');
@@ -102,6 +105,7 @@ class HomeController extends Controller
         return view('home.about',['setting'=>$setting]);
     }
 
+
     public function ekip()
     {
         $setting = Setting::first();
@@ -116,6 +120,12 @@ class HomeController extends Controller
     {
         $setting = Setting::first();
         return view('home.contact',['setting'=>$setting]);
+    }
+
+    public function rezervasyon()
+    {
+        $data = Hizmet::all();
+        return view('home.rezervasyon',['data'=>$data]);
     }
 
     public function sendmessage(Request $request)

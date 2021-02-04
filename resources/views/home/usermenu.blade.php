@@ -7,7 +7,7 @@
         <td class="text-center"><a href="{{route('myprofile')}}"> Profil Bilgileri</a></td>
 
     <tr>
-        <td class="text-center"><a href="#">Randevularım</a></td>
+        <td class="text-center"><a href="{{route('myrezervasyon')}}">Randevularım</a></td>
 
     </tr>
     <tr>
