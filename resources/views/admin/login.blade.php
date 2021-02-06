@@ -46,6 +46,7 @@
                             <img src="{{ asset('assets') }}/admin/images/icon/logo.png" alt="CoolAdmin">
                         </a>
                     </div>
+                    @include('home.message')
                     <div class="login-form">
                         <form action="{{ route('admin_logincheck') }}" method="post">
                             @csrf
