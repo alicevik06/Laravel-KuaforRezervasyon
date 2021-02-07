@@ -31,6 +31,11 @@
                         <i class="fas fa-table"></i>Rezervasyonlar</a>
                 </li>
 
+                <li>
+                    <a href="{{route ('admin_user')}}">
+                        <i class="fas fa-table"></i>Kullanıcılar</a>
+                </li>
+
                 <li class="has-sub">
                     <a class="js-arrow" href="#">
                         <i class="fas fa-copy"></i>Pages</a>

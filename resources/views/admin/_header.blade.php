@@ -133,7 +133,9 @@
                         <div class="account-wrap">
                             <div class="account-item clearfix js-item-menu">
                                 <div class="image">
-                                    <img src="{{ asset('assets') }}/admin/images/icon/avatar-01.jpg" alt="John Doe"/>
+                                    @if (Auth::user()->profile_photo_path)
+                                        <img src="{{Storage::url(Auth::user()->profile_photo_path)}}" height="50" style="border-radius: 10px;">
+                                    @endif
                                 </div>
                                 <div class="content">
                                     @auth
@@ -144,8 +146,9 @@
                                     <div class="info clearfix">
                                         <div class="image">
                                             <a href="#">
-                                                <img src="{{ asset('assets') }}/admin/images/icon/avatar-01.jpg"
-                                                     alt="John Doe"/>
+                                                @if (Auth::user()->profile_photo_path)
+                                                    <img src="{{Storage::url(Auth::user()->profile_photo_path)}}" height="50" style="border-radius: 10px;">
+                                                @endif
                                             </a>
                                         </div>
                                         <div class="content">

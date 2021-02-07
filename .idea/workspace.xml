@@ -22,14 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="451e09d7-52bb-46fb-add4-48465cb679a6" name="Default Changelist" comment="Üye Rezervasyon yapma , Kendi Rezervasyonlarını görüntüleme , silme işlemleri ve Admin tarafından Rezervasyonların görüntülenmesi üzerinde onay veya red işlemleri için edit oluşturulması">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7dffa9fa-78e6-4e7b-a93f-2f31906427c3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7dffa9fa-78e6-4e7b-a93f-2f31906427c3.xml" afterDir="false" />
+    <list default="true" id="451e09d7-52bb-46fb-add4-48465cb679a6" name="Default Changelist" comment="Admin User Role yapısının oluşturulması ve yetkilendirmeler">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/usermenu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/usermenu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/jetstream.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/jetstream.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/rezervasyon.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/rezervasyon.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -218,7 +216,9 @@
       <workItem from="1612375739731" duration="978000" />
       <workItem from="1612376735135" duration="45110000" />
       <workItem from="1612536127086" duration="580000" />
-      <workItem from="1612615554254" duration="5315000" />
+      <workItem from="1612615554254" duration="6419000" />
+      <workItem from="1612686136315" duration="469000" />
+      <workItem from="1612724681973" duration="15199000" />
     </task>
     <task id="LOCAL-00001" summary="Masterpage ve extend işlemleri">
       <created>1610047241606</created>
@@ -423,7 +423,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612470013882</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Admin User Role yapısının oluşturulması ve yetkilendirmeler">
+      <created>1612621157771</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1612621157771</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -442,7 +449,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Admin Layout, Route , Admin Temp. temel dosyaların ayarlanması , Admin Controller" />
     <MESSAGE value="Admin Login , Logincheck , Logout İşlemlerinin route,controller ve templatedeki ayarlarının yapılması." />
     <MESSAGE value="Laravel Menü database işlemleri ,model,migration ve routing ayarlamaları , category(menu) blade ve blank blade oluşturulması." />
     <MESSAGE value="Menu ekleme silme işlemleri vu bu işlemlerin routing , view , template düzenlemeleri" />
@@ -467,7 +473,8 @@
     <MESSAGE value="Search form oluşturulması ve Jet stream livewire ile otomatik tamamlama" />
     <MESSAGE value="Home Route ve User Profile Sayfası Hata Düzeltme" />
     <MESSAGE value="Üye Rezervasyon yapma , Kendi Rezervasyonlarını görüntüleme , silme işlemleri ve Admin tarafından Rezervasyonların görüntülenmesi üzerinde onay veya red işlemleri için edit oluşturulması" />
-    <option name="LAST_COMMIT_MESSAGE" value="Üye Rezervasyon yapma , Kendi Rezervasyonlarını görüntüleme , silme işlemleri ve Admin tarafından Rezervasyonların görüntülenmesi üzerinde onay veya red işlemleri için edit oluşturulması" />
+    <MESSAGE value="Admin User Role yapısının oluşturulması ve yetkilendirmeler" />
+    <option name="LAST_COMMIT_MESSAGE" value="Admin User Role yapısının oluşturulması ve yetkilendirmeler" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1558" y="362" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610317013145">
@@ -498,17 +505,17 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1421" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1607283137387" />
-    <state x="1512" y="433" key="Vcs.Push.Dialog.v2" timestamp="1612470029728">
+    <state x="1512" y="433" key="Vcs.Push.Dialog.v2" timestamp="1612621176455">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1512" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1612470029728" />
+    <state x="1512" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1612621176455" />
     <state x="1802" y="476" width="536" height="454" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1612466313882">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1802" y="476" width="536" height="454" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1612466313882" />
-    <state x="1583" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1612195940365">
+    <state x="1583" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1612739703176">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1583" y="319" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1612195940365" />
+    <state x="1583" y="319" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1612739703176" />
   </component>
 </project>
