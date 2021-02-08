@@ -22,13 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="451e09d7-52bb-46fb-add4-48465cb679a6" name="Default Changelist" comment="Admin User Role yapısının oluşturulması ve yetkilendirmeler">
+    <list default="true" id="451e09d7-52bb-46fb-add4-48465cb679a6" name="Default Changelist" comment="Admin Panel kullanıcı rolleri yönetimi">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/jetstream.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/jetstream.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/rezervasyon.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/rezervasyon.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/hizmet_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/hizmet_detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/user_rez.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_rez.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +216,7 @@
       <workItem from="1612536127086" duration="580000" />
       <workItem from="1612615554254" duration="6419000" />
       <workItem from="1612686136315" duration="469000" />
-      <workItem from="1612724681973" duration="15199000" />
+      <workItem from="1612724681973" duration="17784000" />
     </task>
     <task id="LOCAL-00001" summary="Masterpage ve extend işlemleri">
       <created>1610047241606</created>
@@ -430,7 +428,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612621157771</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Admin Panel kullanıcı rolleri yönetimi">
+      <created>1612740338576</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1612740338576</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -449,7 +454,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Admin Login , Logincheck , Logout İşlemlerinin route,controller ve templatedeki ayarlarının yapılması." />
     <MESSAGE value="Laravel Menü database işlemleri ,model,migration ve routing ayarlamaları , category(menu) blade ve blank blade oluşturulması." />
     <MESSAGE value="Menu ekleme silme işlemleri vu bu işlemlerin routing , view , template düzenlemeleri" />
     <MESSAGE value="Menu update etme route view controller Düzenlemeleri" />
@@ -474,7 +478,8 @@
     <MESSAGE value="Home Route ve User Profile Sayfası Hata Düzeltme" />
     <MESSAGE value="Üye Rezervasyon yapma , Kendi Rezervasyonlarını görüntüleme , silme işlemleri ve Admin tarafından Rezervasyonların görüntülenmesi üzerinde onay veya red işlemleri için edit oluşturulması" />
     <MESSAGE value="Admin User Role yapısının oluşturulması ve yetkilendirmeler" />
-    <option name="LAST_COMMIT_MESSAGE" value="Admin User Role yapısının oluşturulması ve yetkilendirmeler" />
+    <MESSAGE value="Admin Panel kullanıcı rolleri yönetimi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Admin Panel kullanıcı rolleri yönetimi" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1558" y="362" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610317013145">
@@ -493,6 +498,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1700" y="458" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1612013845124" />
+    <state x="496" y="122" key="DiffContextDialog" timestamp="1612740357586">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="496" y="122" key="DiffContextDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1612740357586" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1610317132616">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -505,10 +514,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1421" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1607283137387" />
-    <state x="1512" y="433" key="Vcs.Push.Dialog.v2" timestamp="1612621176455">
+    <state x="1512" y="433" key="Vcs.Push.Dialog.v2" timestamp="1612740367429">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1512" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1612621176455" />
+    <state x="1512" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1612740367429" />
     <state x="1802" y="476" width="536" height="454" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1612466313882">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

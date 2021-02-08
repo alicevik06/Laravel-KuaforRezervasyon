@@ -59,8 +59,7 @@
 
                                         <p>{!! $data->detail !!}</p>
 
-                                        <a href="{{route('rezervasyon')}}" data-scroll
-                                           class="btn btn-light btn-radius btn-brd grd1 effect-1">Randevu Al</a>
+
 
                                     </div><!-- end messagebox -->
                                 </div><!-- end col -->

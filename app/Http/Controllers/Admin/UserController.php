@@ -87,7 +87,7 @@ class UserController extends Controller
             $data->profile_photo_path = Storage::putFile('profile-photos',$request->file('image')); // file upload
         }
         $data->save();
-        return redirect()->route('admin_users')->with('success','Kullanıcı Bilgileri Güncellendi');
+        return redirect()->route('admin_user')->with('success','Kullanıcı Bilgileri Güncellendi');
     }
     public function user_roles(User $user,$id)
     {

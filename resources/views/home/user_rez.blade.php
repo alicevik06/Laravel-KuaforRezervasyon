@@ -115,7 +115,7 @@
                                 <td>{{$rs->Not}}</td>
                                 <td>
                                 <button type="reset" class="btn btn-danger text-center">
-                                    <a style="color: white" href="" onclick="return confirm('Silmek İstedğinize Emin misiniz?')">
+                                    <a href="{{route('admin_rezervasyon_delete',['id'=>$rs->id])}}" style="color: white" href="" onclick="return confirm('Silmek İstedğinize Emin misiniz?')">
                                         Delete
                                     </a>
                                 </button>
