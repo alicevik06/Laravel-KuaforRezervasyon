@@ -17,7 +17,7 @@
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Hizmetler</a></li>
+                        <li class="breadcrumb-item"><a href="#">Kullanıcılar</a></li>
                     </ol>
                 </div>
             </div>
@@ -33,8 +33,7 @@
                                 <div class="row">
                                 <div class="col-2"> <strong>Kullanıcı Listesi</strong></div>
 
-                                    <div class="col-8"></div>
-                                    <div class="col-2"> <a href="{{route('admin_hizmet_add')}}" type="submit" class="btn btn-primary btn-sm">Hizmet Ekle</a></div>
+                                    </div>
 
                                 </div>
                             </div>

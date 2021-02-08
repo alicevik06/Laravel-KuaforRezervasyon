@@ -48,7 +48,7 @@
         <div  class="container">
             <div class="row">
 
-                <div style="background-image: url(http://127.0.0.1:8000/assets/uploads/b1.jpg);" id="services" class="section lb">
+                <div style="background-image: url(http://127.0.0.1:8000/assets/uploads/b1.jpg);width: 100%" id="services" class="section lb">
                     <div class="container">
                         <div class="section-title row text-center">
                             <div class="col-md-8 offset-md-2">
