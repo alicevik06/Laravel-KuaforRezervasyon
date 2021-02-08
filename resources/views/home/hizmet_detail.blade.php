@@ -110,7 +110,7 @@
 
 
                                                             <div class="line-pricing">
-                                                                <img style="width: 300px;height: 180px;" class="text-center item  display-table overlay" src="{{Storage::url($rs->image)}}" alt="" >
+                                                                <img style="width: 300px;height: 200px;" class="text-center item  display-table overlay" src="{{Storage::url($rs->image)}}" alt="" >
                                                             </div>
 
                                                         </div>
